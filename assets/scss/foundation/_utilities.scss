@@ -1,0 +1,49 @@
+@charset 'utf-8';
+
+/*---------------------------------------
+    Utilities
+----------------------------------------*/
+.font-en {
+    font-family: $font-en;
+}
+.t-white {
+    color: $color-white;
+}
+.t-main {
+    color: $color-main;
+}
+.show_sp {
+    display: none;
+    @include mq('sp') {
+        display: block;
+    }
+}
+.hide_sp {
+    @include mq('sp') {
+        display: none;
+    }
+}
+.show_tab {
+    display: none;
+    @include mq('tab') {
+        display: block;
+    }
+}
+.hide_tab {
+    @include mq('tab') {
+        display: none;
+    }
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid {
+    display: grid;
+}
+.flex-md {
+    @include mq('md') {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

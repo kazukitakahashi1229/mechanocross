@@ -1,0 +1,62 @@
+@charset 'utf-8';
+
+//color
+$color-text: #4C4948;
+$color-base-primary: #F5F5F4;
+$color-base-secondary: #231815;
+$color-main: #00AEA5;
+$color-white: #fff;
+$color-black: #000;
+$color-dark: #333;
+$color-gray: #707070;
+
+//font-weight
+$exlight: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+  
+// font
+$font-jp: 'noto-sans-cjk-jp', sans-serif;
+$font-en: 'futura-pt', sans-serif;
+
+//layer
+$layer-toggleBtn: 50;
+$layer-drawer: 40;
+$layer-floating: 30;
+$layer-header: 20;
+$layer-footer: 10;
+
+//layout
+$inner: 910px;
+$padding-base: 3rem;
+$padding-md: 3rem;
+$padding-sm: 20px;
+
+$header-height-sm: 92px;
+$header-height-md: 82px;
+$header-height-md-fixed: 70px;
+
+//breakpoint
+$breakpoints: (
+	"xs": "(max-width: 576px)",
+	"sm": "(max-width: 767px)",
+	"md": "(min-width: 768px)",
+	"md-only": "(min-width: 768px) and (max-width: 979px)",
+	"lg": "(min-width: 980px)",
+    "xl": "(max-width: 1280px)",
+	"xxl": "(min-width: 1600px)",
+
+	"sp-sm": "(max-width: 375px)",
+	"sp": "(max-width: 430px)",
+	"tab": "(max-width: 768px)",
+	"tab-l": "(max-width: 980px)",
+	"pc": "(max-width: 1280px)",
+);
+@mixin mq($breakpoint: sp) {
+	@media #{map-get($breakpoints, $breakpoint)} {
+		@content;
+	}
+}

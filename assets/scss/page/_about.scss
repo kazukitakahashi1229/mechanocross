@@ -1,0 +1,278 @@
+@charset 'utf-8';
+
+/*---------------------------------------
+    Page - ABOUT US
+----------------------------------------*/
+.page__about {
+    &__philo {
+        padding: 9rem 0 6rem;
+        @include mq('sp') {
+            padding: 8rem 0;
+        }
+        .section__title {
+            margin-bottom: 8rem;
+            @include mq('sp') {
+                margin-bottom: 3rem;
+            }
+        }
+        &__cont {
+            &__top {
+                margin-bottom: 8rem;
+                text-align: center;
+                @include mq('sp') {
+                    margin-bottom: 3rem;
+                }
+                h3 {
+                    font-size: 2.8rem;
+                    font-weight: 500;
+                    letter-spacing: .4rem;
+                    @include mq('sp') {
+                        font-size: 2rem;
+                        letter-spacing: .3rem;
+                    }    
+                }
+            }
+            &__main {
+                margin-bottom: 3rem;
+                @include mq('sp') {
+                    margin-bottom: 2rem;
+                }  
+                &__item {
+                    margin-bottom: 2rem;
+                    padding: 2rem;
+                    width: calc(50% - 1rem);
+                    justify-content: space-between;
+                    align-items: center;
+                    background: $color-base-primary;                    
+                    @include mq('tab') {
+                        margin-right: 0 !important;
+                        width: 100%;
+                    }
+                    @include mq('sp') {
+                        margin-bottom: 1.5rem;
+                        padding: 1.5rem;
+                    } 
+                    &:not(:nth-child(2n)) {
+                        margin-right: 2rem;
+                    }
+                    p {
+                        width: 7rem;
+                        height: 6rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 4.2rem;
+                        @include mq('sp') {
+                            width: 4rem;
+                            height: 4rem;
+                            font-size: 2.8rem;
+                        } 
+                    }
+                    h4 {
+                        width: calc(100% - 9rem);
+                        font-size: 1.7rem;
+                        font-weight: 500;
+                        @include mq('sp') {
+                            width: calc(100% - 5.5rem);
+                            font-size: 1.4rem;
+                        } 
+                    }
+                }
+            }
+            &__bottom {
+                row-gap: 4rem;
+                text-align: center;
+                @include mq('sp') {
+                    row-gap: 2rem;
+                } 
+                h3 {
+                    font-size: 2.8rem;
+                    letter-spacing: .4rem;    
+                    @include mq('sp') {
+                        font-size: 2rem;
+                    } 
+                }
+                img {
+                    margin: 0 auto;
+                    width: 11.5rem;
+                    @include mq('sp') {
+                        width: 8.5rem;
+                    } 
+                }
+            }
+        }
+    }
+    &__company {
+        padding: 6rem 0 12rem;   
+        @include mq('sp') {
+            padding: 0 0 8rem;
+        }      
+        &__cont {
+            justify-content: space-between;
+            align-items: center;
+            @include mq('tab') {
+                flex-direction: column-reverse;
+                row-gap: 8rem;
+            }
+            @include mq('sp') {
+                row-gap: 6rem;
+            }  
+            &__left {
+                max-width: 70rem;
+                width: 100%;
+                row-gap: 5rem;
+                @include mq('tab') {
+                    width: 100%;
+                }
+                @include mq('sp') {
+                    row-gap: 4rem;
+                }  
+                .section__title {
+                    margin-bottom: 2rem;
+                    @include mq('sp') {
+                        margin-bottom: 0;
+                    } 
+                }
+                &__item {
+                    align-items: stretch;
+                    &__left {
+                        padding-bottom: 3rem;
+                        width: 18rem;
+                        border-bottom: .1rem solid $color-main;
+                        @include mq('sp') {
+                            width: 10rem;
+                        }  
+                        p {
+                            font-weight: 500;
+                        }
+                    }
+                    &__right {
+                        padding-bottom: 3rem;
+                        width: calc(100% - 18rem);
+                        border-bottom: .1rem solid #ccc;
+                        @include mq('sp') {
+                            width: calc(100% - 10rem);
+                        }  
+                        p {
+
+                        }
+                        ul {
+                            row-gap: 1rem;
+                            @include mq('sp') {
+                                row-gap: .5rem;
+                            }  
+                            li {
+                                row-gap: 1rem;
+                                p {
+                                    &:first-child {
+                                        margin-bottom: 0.5rem;
+                                        padding-left: 1.5rem;
+                                        position: relative;
+                                        &:before {
+                                            content: '';
+                                            width: 0.8rem;
+                                            height: 0.8rem;
+                                            background: $color-main;
+                                            border-radius: 50%;
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 0;
+                                            transform: translateY(-50%);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &__right {
+                width: calc(100% - 75rem);
+                @include mq('tab') {
+                    width: 100%;
+                }
+                img {
+                    width: 55rem;
+                    position: relative;
+                    bottom: -10rem;
+                    @include mq('tab') {
+                        width: 100vw;
+                        bottom: initial;
+                        left: -2rem;
+                    }
+                }
+            }
+        }
+    }
+    &__history {
+        padding: 12rem 0;
+        background: $color-base-primary;
+        @include mq('sp') {
+            padding: 8rem 0;
+        }  
+        &__cont {
+            &__item {
+                padding-left: 3.5rem;
+                position: relative;
+                align-items: flex-start;
+                justify-content: space-between;
+                @include mq('sp') {
+                    padding-left: 2.5rem;
+                }  
+                &:after {
+                    content: '';
+                    width: .8rem;
+                    height: 0.8rem;
+                    border-radius: 50%;
+                    background: $color-main;
+                    position: absolute;
+                    top: .9rem;
+                    left: 0;
+                }
+                &:not(:last-child) {
+                    padding-bottom: 5rem;
+                    @include mq('sp') {
+                        padding-bottom: 4rem;
+                    } 
+                    &:before {
+                        content: '';
+                        width: .1rem;
+                        background: #ddd;
+                        position: absolute;
+                        top: .9rem;
+                        left: .35rem;
+                        bottom: -1rem;
+                    }
+                }
+                p {
+                    width: 15rem;
+                    position: relative;
+                    font-size: 1.7rem;
+                    font-weight: 500;
+                    @include mq('sp') {
+                        width: 100%;
+                    } 
+                    &:before {
+                        content: '';
+                        width: 6rem;
+                        height: 0.1rem;
+                        background: $color-text;
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                        @include mq('sp') {
+                            display: none;
+                        } 
+                    }
+                }
+                h3 {
+                    width: calc(100% - 18rem);
+                    @include mq('sp') {
+                        width: 100%;
+                    }  
+                }
+            }
+        }
+    }
+}

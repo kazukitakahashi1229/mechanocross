@@ -1,0 +1,117 @@
+@charset 'utf-8';
+
+/*---------------------------------------
+    Page - RESEARCH
+----------------------------------------*/
+.page__research {
+    &__main {
+        &__lead {
+            padding-bottom: 14rem;
+            gap: 3rem 0;
+            @include mq('sp') {
+                padding-bottom: 8rem;
+                gap: 2rem 0;
+            }
+            p {
+                width: 100%;
+                font-size: 1.7rem;
+                text-align: center;
+                @include mq('sp') {
+                    font-size: 1.4rem;
+                    text-align: justify;
+                }
+            }
+        }
+        &__slide {
+            padding-bottom: 14rem;
+            gap: 10rem 0;
+            @include mq('sp') {
+                padding-bottom: 8rem;
+                gap: 4rem 0;
+            }
+            &__cont {
+                width: 100%;
+                gap: 2rem 0;
+                @include mq('sp') {
+                    gap: 1rem 0;
+                }
+                h2 {
+                    width: 100%;
+                    font-size: 2.8rem;
+                    font-weight: 500;
+                    text-align: center;
+                    @include mq('sp') {
+                    }
+                }
+                .swiper {
+                    width: 100%;
+                    overflow: initial;
+                    &-wrapper {
+                        transition-timing-function: linear;
+                    }
+                    &-slide {
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        img {
+                            // height: auto;
+                            width: 90%;
+                            @include mq('sp') {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .button {
+                width: 100%;
+            }
+        }
+    }
+    &__join {
+        padding: 8rem 0;
+        background: $color-base-primary;
+        @include mq('sp') {
+            padding: 6rem 0;
+        }
+        &__cont {
+            &__title {
+                margin-bottom: 3rem;
+                row-gap: 1rem;
+                text-align: center;
+                @include mq('sp') {
+
+                }
+                p {
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                }
+                h2 {
+                    font-size: 2.8rem;
+                    font-weight: 500;
+                    letter-spacing: .15em;
+                    @include mq('sp') {
+                        font-size: 2.2rem;
+                    }
+                    span {
+                        font-size: 2.8rem;
+                        font-weight: 500;
+                        letter-spacing: .15em;
+                        @include mq('sp') {
+                            font-size: 2.2rem;
+                        }
+                    }
+                }
+            }
+            &__text {
+                margin-bottom: 5rem;
+                row-gap: 2rem;
+                text-align: center;
+                @include mq('sp') {
+                    margin-bottom: 4rem;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}

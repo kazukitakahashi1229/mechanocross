@@ -1,0 +1,84 @@
+/*---------------------------------------
+    Page - SUSTAINABILITY
+----------------------------------------*/
+.page__sustainability__main {
+  padding: 10rem 0 12rem;
+  background: linear-gradient(180deg, #00AEA5 34.09%, #74D0CB 100%);
+}
+@media (max-width: 430px) {
+  .page__sustainability__main {
+    padding: 6rem 0 8rem;
+  }
+}
+.page__sustainability__main .container {
+  row-gap: 4rem;
+}
+.page__sustainability__main__cont {
+  align-items: stretch;
+}
+@media (max-width: 768px) {
+  .page__sustainability__main__cont {
+    justify-content: center;
+  }
+}
+.page__sustainability__main__cont__item {
+  padding: 3.5rem 2.5rem;
+  width: calc(33.333% - 3.3333rem);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2rem;
+  text-align: center;
+  box-shadow: 0 0.2rem 3rem 0 #00AEA5;
+}
+@media (max-width: 768px) {
+  .page__sustainability__main__cont__item {
+    margin-right: 0 !important;
+    width: 80%;
+  }
+}
+@media (max-width: 430px) {
+  .page__sustainability__main__cont__item {
+    width: 100%;
+  }
+}
+.page__sustainability__main__cont__item:not(:last-child) {
+  margin-right: 5rem;
+}
+@media (max-width: 768px) {
+  .page__sustainability__main__cont__item:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+.page__sustainability__main__cont__item:nth-child(2) img {
+  height: 90%;
+}
+.page__sustainability__main__cont__item h3 {
+  margin-bottom: 3.5rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  width: 100%;
+}
+@media (max-width: 430px) {
+  .page__sustainability__main__cont__item h3 {
+    margin-bottom: 2.5rem;
+  }
+}
+.page__sustainability__main__cont__item__icon {
+  margin-bottom: 4rem;
+  width: 100%;
+  height: 11.5rem;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 430px) {
+  .page__sustainability__main__cont__item__icon {
+    margin-bottom: 2.5rem;
+    height: 10rem;
+  }
+}
+.page__sustainability__main__cont__item__icon img {
+  width: auto;
+  height: 100%;
+}
+.page__sustainability__main__cont__item p {
+  text-align: justify;
+}

@@ -1,0 +1,321 @@
+@charset 'utf-8';
+
+/*---------------------------------------
+    Page - base style
+----------------------------------------*/
+.archive,
+.news {
+    main {
+        padding: 10rem 0 15rem;
+        @include mq('sp') {
+            padding: 8rem 0;
+        }
+        & > .container {
+            justify-content: space-between;
+            align-items: flex-start;
+            @include mq('sp') {
+                gap: 6rem 0;
+            }
+        }
+    }
+    &__tab {
+        width: 15%;
+        @include mq('sp') {
+            width: 100%;
+        }
+        ul {
+            gap: 2rem 0;
+            @include mq('sp') {
+                gap: 0 4rem;
+            }
+            li {
+                width: 100%;
+                @include mq('sp') {
+                    width: initial;
+                }
+                a {
+                    color: #aaa;
+                    @include mq('sp') {
+                    }
+                    &.active {
+                        color: $color-main;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+    &__list {
+        width: 80%;
+        @include mq('tab') {
+            width: 70%;
+        }
+        @include mq('sp') {
+            width: 100%;
+        }
+        ul {
+            gap: 5rem 0;
+            @include mq('sp') {
+                gap: 4rem 0;
+            }
+        }
+        &__item {
+            width: 100%;
+            a {
+                width: 100%;                
+                gap: 1rem 0;
+            }
+            &__info {
+                width: 100%;
+                gap: 0 1rem;
+                align-items: center;
+                time {
+                    color: #777;
+                    font-size: 1.3rem;
+                }
+                span {
+                    padding: .3rem 2rem;
+                    border-radius: 2rem;
+                    background: $color-base-primary;
+                    font-size: 1.3rem;
+                    @include mq('sp') {
+                    }
+                }
+            }
+            h3 {
+                width: 100%;
+                font-size: 2rem;
+                @include mq('tab') {
+                    font-size: 1.8rem;
+                }
+                @include mq('sp') {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        &__pagination {
+            margin-top: 8rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include mq('sp') {
+                margin-top: 0;
+            }
+            .page-numbers {
+                margin: 0 .5rem;
+                width: 4.5rem;
+                height: 4.5rem;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                color: $color-main;
+                background: $color-base-primary;
+                font-size: 1.4rem;
+                @include mq('sp') {
+                    width: 4rem;
+                    height: 4rem;
+                }
+                &.current {
+                    background: $color-main;
+                    border-color: $color-main;
+                    color: $color-white;
+                }
+                &.prev,
+                &.next {
+                    width: 6rem;
+                    height: 2.5rem;
+                }
+                &.prev {
+                    background: url(../images/svg/left-arrow-main.svg) no-repeat center/contain;
+                }
+                &.next {
+                    background: url(../images/svg/right-arrow-main.svg) no-repeat center/contain;
+                }
+            }
+        }
+    }
+}
+.page {
+   
+}
+.single {
+    main {
+        padding-bottom: 15rem;
+        @include mq('tab') {
+            padding-bottom: 12rem;
+        }
+        @include mq('sp') {
+            padding-bottom: 8rem;
+        }
+        .entry {
+            margin-bottom: 8rem;
+            @include mq('tab') {
+            }
+            @include mq('sp') {
+                margin-bottom: 6rem;
+            }
+            h2 {
+                margin-top: 6rem;
+                margin-bottom: 3rem;
+                padding-bottom: 2rem;
+                font-size: 2.4rem;
+                border-bottom: .1rem solid $color-main;
+                @include mq('sp') {
+                    margin-top: 5rem;
+                    font-size: 2.2rem;
+                }
+            }
+            h3 {
+                margin-top: 5rem;
+                margin-bottom: 3rem;
+                font-size: 2rem;
+                color: $color-main;
+                font-weight: 500;
+                @include mq('sp') {
+                    margin-top: 4rem;
+                    font-size: 1.8rem;
+                }
+            }
+            a {
+                color: $color-main;
+                text-decoration: underline;
+            }
+            p {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    &__header {
+        padding: 20rem 0 8rem;
+        @include mq('tab') {
+            padding-top: 15rem;
+        }
+        @include mq('sp') {
+            padding: 12rem 0 6rem;
+        }
+        .container {
+            gap: 8rem 0;
+            @include mq('sp') {
+                gap: 4rem 0;
+            }
+        }
+        &__meta {
+            width: 100%;
+            gap: 2rem 0;
+            @include mq('sp') {
+            }
+            &__top {
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                gap: 0 2rem;
+                time {
+                    font-size: 1.3rem;
+                }
+                ul {
+                    gap: 0 1rem;
+                    li {
+                        a {
+                            padding: .3rem 2rem;
+                            border-radius: 2rem;
+                            background: $color-base-primary;
+                            @include mq('sp') {
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                }
+            }
+            h1 {
+                width: 100%;
+                font-size: 2.8rem;
+                text-align: center;
+                @include mq('sp') {
+                    font-size: 2.2rem;
+                }
+            }
+        }
+        &__thumb {
+            width: 100%;
+            padding-top: 50%;
+            background: no-repeat center/cover;
+            border-radius: 2rem;
+            @include mq('sp') {
+                border-radius: 1rem;
+            }
+        }
+    }
+}
+.cta {
+    &__recruit {
+        width: 100%;
+        position: relative;
+        &__title {
+            width: 100%;
+            position: relative;
+            @include mq('sp') {
+            }
+            p {
+                font-size: 5rem;
+                @include mq('sp') {
+                    font-size: 3.6rem;
+                }
+            }
+        }
+        &__text {
+            width: 100%;
+            position: relative;
+            p {
+                text-align: justify;
+            }
+        }
+        a {
+            padding: 8rem;
+            width: 100%;
+            gap: 3rem 0;
+            border-radius: 2rem;
+            position: relative;
+            @include mq('tab') {
+                padding: 4rem;
+                gap: 1rem 0;
+            }
+            @include mq('sp') {
+                padding: 3rem;
+            }
+            &:before {
+                content: '';
+                width: 100%;
+                height: 100%;
+                border-radius: 2rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: .85;
+            }
+            &.recruit {
+                background: url(../images/jpg/recruit-cta.jpg) no-repeat bottom center/cover;
+                &:before {
+                    background: linear-gradient(to right, $color-main, #74D0CB);
+                }
+            }
+            &.research {
+                background: url(../images/jpg/research-cta.jpg) no-repeat center/cover;
+                &:before {
+                    background: linear-gradient(to right, #231815, #525252);
+                }
+            }
+            & > img {
+                width: 8rem;
+                height: auto;
+                position: absolute;
+                top: 50%;
+                right: 4rem;
+                transform: translateY(-50%);
+                @include mq('tab') {
+                    display: none;
+                }
+            }
+        }
+    }
+}

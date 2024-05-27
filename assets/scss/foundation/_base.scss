@@ -1,0 +1,103 @@
+@charset 'utf-8';
+@import "./_var.scss";
+
+/*---------------------------------------
+    Base CSS
+----------------------------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    @include mq('pc') {
+        font-size: 0.78125vw;
+    }
+    @include mq('tab') {
+        font-size: 1.30208vw;
+    }
+    @include mq('sp') {
+        font-size: 2.3255814vw;
+    }
+    @include mq('sp-sm') {
+        font-size: 2.6666666vw;
+    }
+}
+
+body {
+    // min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-jp;
+    color: $color-text;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 170%;
+    letter-spacing: .05rem;
+    overflow-x: hidden;
+    @include mq('tab') {
+    }
+    @include mq('sp') {
+        font-size: 1.4rem;
+    }
+}
+
+main {
+    flex-grow: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+li,
+span {
+    font-family: $font-jp;
+    color: $color-text;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 170%;
+    letter-spacing: .05rem;
+    @include mq('sp') {
+        font-size: 1.4rem;
+    }
+}
+a {
+    display: inline-block;
+    &:visited {
+        // color: inherit;
+    }
+}
+.container {
+    width: 100%;
+    max-width: 128rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    position: relative;
+    z-index: 2;
+    @include mq('tab') {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    &.md {
+        max-width: 98rem;
+    }
+    &.sm {
+        max-width: 88rem;
+    }
+}
+section {
+    overflow: hidden;
+    position: relative;
+}

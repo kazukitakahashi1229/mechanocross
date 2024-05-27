@@ -1,0 +1,166 @@
+@charset 'utf-8';
+
+/*---------------------------------------
+    animation
+----------------------------------------*/
+.js-anime {
+    opacity: 0;
+}
+
+// fade-in
+.anime-fadeIn.js-anime-active {
+    animation: fadeInActive 0.7s forwards;
+}
+@keyframes fadeInActive {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+// fade-in-up
+.anime-fadeInUp.js-anime-active {
+    animation: fadeInUpActive 0.7s forwards;
+}
+@keyframes fadeInUpActive {
+    0% {
+        opacity: 0;
+        transform: translateY(4rem);
+        transition-timing-function: cubic-bezier(0, 0.4, 0.2, 1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#stalker {
+    width: 5rem;
+    height: 5rem;
+    position: fixed;
+    top: -2.5rem;
+    left: -2.5rem;
+    border: .5rem solid $color-main;
+    background: none;
+    transition: transform 0.2s, top, 0.5s, left 0.5s, width .5s, height .5s, background-color .5s;
+    transition-timing-function: ease-out;
+    box-sizing: border-box;
+    border-radius: 50%;
+    opacity: .7;
+    z-index: 1000;
+    pointer-events: none;
+    @include mq('tab') {
+        display: none;        
+    }
+    &.hov_ {
+        display: none;
+    }
+}
+#cursor {
+    width: 5rem;
+    height: 5rem;
+    position: fixed;
+    top: -2.5rem;
+    left: -2.5rem;
+    transition: width .3s, height .3s, top .3s, left .3s;
+    transform: translate(0, 0);
+    opacity: .8;
+    z-index: 1000;
+    pointer-events: none;
+    @include mq('tab') {
+        display: none;        
+    }
+    span {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: $color-main;
+        border-radius: 50%;
+        opacity: 0;
+    }
+    &.hov_ {
+        span {
+            -webkit-animation: pointerSAnime .8s cubic-bezier(0.5, 0, 0, 1) infinite;
+            animation: pointerSAnime .8s cubic-bezier(0.5, 0, 0, 1) infinite;
+        }
+    }
+}
+@keyframes pointerSAnime { 
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+@-webkit-keyframes pointerSAnime {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+.loading {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $color-main;
+    z-index: 1001;
+    transition-delay: .08s;
+    transition-duration: .8s;
+    transition-timing-function: cubic-bezier(1, 0, 0.3, 1);
+    &.loaded {
+        left: 100%;
+        .loading__cont {
+            left: 100%;
+        }
+    }
+    &__cont {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #E6E6E6;
+        transition-duration: .8s;
+        transition-timing-function: cubic-bezier(1, 0, 0.3, 1);
+        img {
+            width: 8rem;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: loading 1.5s infinite;
+            opacity: 0;
+            @keyframes loading {
+                50% {
+                    opacity: 1;
+                }
+            }
+    
+        }
+    }
+}
+
+.image-hover-item {
+    &:hover {
+        .image-hover-item-inner {
+            transform: scale(1.1);
+        }        
+    }
+    .image-hover-item-inner {
+        transition: all .3s;
+    }
+}

@@ -1,0 +1,105 @@
+@charset 'utf-8';
+
+/*---------------------------------------
+    HEADINGS
+----------------------------------------*/
+.section__title {
+    margin-bottom: 6rem;
+    position: relative;
+    row-gap: 1rem;
+    @include mq('sp') {
+        margin-bottom: 5rem;
+    }
+    &.center {
+        text-align: center;
+        img {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &.left {
+        text-align: left;
+        img {
+            left: -3rem;
+            @include mq('sp') {
+                left: -1rem;
+            }
+        }
+    }
+    img {
+        width: 9rem;
+        height: auto;
+        position: absolute;
+        top: -3rem;
+        @include mq('sp') {
+            width: 6rem;
+            top: -2rem;
+        }
+        
+    }
+    h2 {
+        font-weight: 500;
+        position: relative;
+        z-index: 1;
+    }
+    p {
+        font-size: 5rem;
+        font-weight: 500;
+        position: relative;
+        z-index: 1;
+        @include mq('sp') {
+            font-size: 3.2rem;
+        }
+    }
+    &__sub {
+        row-gap: 3rem;
+        @include mq('sp') {
+            row-gap: 1.5rem;
+        }
+        &.main {
+            .section__title__sub__inner {
+                border-top: .1rem solid #ccc;
+                h2 {
+                    position: relative;
+                    display: inline-block;
+                    &:before {
+                        content: '';
+                        height: .1rem;
+                        position: absolute;
+                        top: -.1rem;
+                        left: 0;
+                        right: 0;
+                        background: $color-main;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+        &.white {
+            .section__title__sub__inner {
+                border-top: .1rem solid #2FC9C1;
+            }
+        }
+        &__inner {
+            h2 {
+                padding-top: 3.5rem;
+                font-size: 3.2rem;
+                font-weight: 500;
+                letter-spacing: 0.15em;
+                @include mq('sp') {
+                    padding-top: 2.5rem;
+                    font-size: 2.2rem;
+                    letter-spacing: .1em;
+                }
+            }
+        }
+        &__lead {
+            p {
+                font-size: 1.7rem;
+                @include mq('sp') {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

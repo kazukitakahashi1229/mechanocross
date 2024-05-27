@@ -1,0 +1,71 @@
+/*---------------------------------------
+    Page - CONTACT
+----------------------------------------*/
+.page__contact .container {
+  gap: 6rem 0;
+}
+.page__contact__main {
+  padding: 8rem 0;
+}
+.page__contact__main__top {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 430px) {
+  .page__contact__main__top {
+    gap: 2rem 0;
+  }
+}
+@media (max-width: 430px) {
+  .page__contact__main__top__title {
+    width: 100%;
+  }
+}
+.page__contact__main__top__title p {
+  font-size: 4.2rem;
+  font-weight: 500;
+}
+@media (max-width: 430px) {
+  .page__contact__main__top__lead {
+    width: 100%;
+  }
+}
+.page__contact__main__top__lead p {
+  text-align: right;
+}
+@media (max-width: 430px) {
+  .page__contact__main__top__lead p {
+    text-align: justify;
+  }
+}
+.page__contact__main__top__lead p:first-child {
+  margin-bottom: 0.5rem;
+}
+.page__contact__main__top__lead p:last-child {
+  font-size: 1.2rem;
+  color: #777;
+}
+.page__contact__main__top__lead p:last-child span {
+  color: #D07474;
+}
+.page__contact__main__form {
+  width: 100%;
+}
+.page__contact__cta {
+  padding: 8rem 0;
+  background: #F5F5F4;
+}
+@media (max-width: 430px) {
+  .page__contact__cta {
+    padding: 4rem 0;
+  }
+}
+.page__contact__cta .container {
+  gap: 4rem 0;
+}
+@media (max-width: 768px) {
+  .page__contact__cta .container {
+    gap: 2rem 0;
+  }
+}
