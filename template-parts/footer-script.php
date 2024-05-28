@@ -79,6 +79,31 @@
                 }
             },false);
         }
+        <?php elseif (is_page('recruit')):?>
+        {
+            const swiper = new Swiper('#swiper-recruit', {
+                loop: true, // ループ有効
+                spaceBetween: 20,
+                slidesPerView: 1.5, // 一度に表示する枚数
+                speed: 6000, // ループの時間
+                allowTouchMove: false, // スワイプ無効
+                autoplay: {
+                    delay: 0, // 途切れなくループ
+                },
+                breakpoints: {
+                    421: {
+                        slidesPerView: 2.3, // 一度に表示する枚数
+                        spaceBetween: 20,
+                        speed: 10000, // ループの時間
+                    },
+                    769: {
+                        slidesPerView: 3.6, // 一度に表示する枚数
+                        spaceBetween: 20,
+                        speed: 10000, // ループの時間
+                    }
+                }
+            },false);
+        }
         <?php endif; ?>
     });
 </script>

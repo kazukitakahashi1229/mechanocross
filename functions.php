@@ -20,13 +20,15 @@ function style_script() {
         wp_enqueue_style( 'sustainability', get_theme_file_uri().'/assets/css/sustainability.css', array(), $theme_var, false );
     } else if (is_page('research')) {
         wp_enqueue_style( 'research', get_theme_file_uri().'/assets/css/research.css', array(), $theme_var, false );
+    } else if (is_page('recruit')) {
+        wp_enqueue_style( 'recruit', get_theme_file_uri().'/assets/css/recruit.css', array(), $theme_var, false );
     } else if (is_page('contact')) {
         wp_enqueue_style( 'contact', get_theme_file_uri().'/assets/css/contact.css', array(), $theme_var, false );
     } else {
         wp_enqueue_style( 'page', get_theme_file_uri().'/assets/css/page.css', array(), $theme_var, false );
     }
 
-    if (is_front_page() || is_page('research')) {
+    if (is_front_page() || is_page('research') || is_page('recruit')) {
         wp_enqueue_style('swiper', 'https://unpkg.com/swiper@8/swiper-bundle.min.css');
     }
     
@@ -52,7 +54,7 @@ function footer_script() {
 	wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js' );
     wp_enqueue_script('script_js', get_theme_file_uri().'/assets/js/script.js', array(), $theme_var, true);
 
-    if (is_front_page() || is_page('research')) {
+    if (is_front_page() || is_page('research') || is_page('recruit')) {
         wp_enqueue_script( 'swiper', 'https://unpkg.com/swiper@8/swiper-bundle.min.js' );
     }
 
