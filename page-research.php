@@ -22,9 +22,10 @@
     <section class="page__research__main js-anime anime-fadeInUp">
         <div class="container">
             <div class="page__research__main__lead flex">
-                <p>2024 年 1 月よりメカノケミカル有機合成を検討するための情報を提供する<br>メカノケミカル有機合成実装研究会を設立いたしました。 </p>
+                <p>2024 年 4 月よりメカノケミカル有機合成を検討するための情報を提供する<br>メカノケミカル有機合成実装研究会を設立いたしました。 </p>
                 <p>メカノケミカル有機合成について「聞いたことがあるがメリットがわからない」 <br>「自分たちのプロセスに使えるかどうか知りたい」「成功事例を知りたい」<br>
 といった方々のため、 研究会では基礎知識や過去の成功例、海外の動向や特許情報など、<br>様々な研究情報を 会員様にご提供しております。</p>
+                <p>協業による検証テストのための相談について<br>会員様限定で、年間 6 回程度可能ですので、ぜひご相談ください</p>
             </div>
             <div class="page__research__main__slide flex">
                 <div class="page__research__main__slide__cont flex">
@@ -66,7 +67,7 @@
 随時、会員企業様を募集しておりますので、ぜひお気軽にお問合せください。</p>
                 </div>
                 <div class="button center flex js-anime anime-fadeInUp">
-                    <a href="<?php echo get_template_directory_uri(); ?>/assets/data/download_document_business01.pdf" class="fill" target="_blank" rel="noopener noreferrer">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScxiaJlOhb8rH0e7vrJ2Zx7KUnQTydaKjS_mgJWt7u2g3Ye5Q/viewform" class="fill" target="_blank" rel="noopener noreferrer">
                         <span>詳しくはこちら</span>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/right-arrow-white.svg" alt="右矢印">
                     </a>

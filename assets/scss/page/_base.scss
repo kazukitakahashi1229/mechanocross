@@ -136,9 +136,7 @@
         }
     }
 }
-.page {
-   
-}
+.page,
 .single {
     main {
         padding-bottom: 15rem;
@@ -177,6 +175,28 @@
                     font-size: 1.8rem;
                 }
             }
+            ul,
+            ol {
+                margin: 2rem 0;
+                padding-left: 2rem;
+                li {
+                    padding-left: 1.8rem;
+                    position: relative;
+                    &:before {
+                        content: '';
+                        width: 0.6rem;
+                        height: 0.6rem;
+                        border-radius: 50%;
+                        background: $color-main;
+                        position: absolute;
+                        top: .9rem;
+                        left: 0;
+                    }
+                    &:not(:last-child) {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
             a {
                 color: $color-main;
                 text-decoration: underline;
@@ -186,6 +206,8 @@
             }
         }
     }
+}
+.single {
     &__header {
         padding: 20rem 0 8rem;
         @include mq('tab') {

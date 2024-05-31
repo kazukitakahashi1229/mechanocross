@@ -60,9 +60,15 @@
                     <p class="font-en t-main">About Us</p>
                 </div>
                 <div class="page__top__about__cont__left__text js-anime anime-fadeInUp">
+                    <?php if (qtranxf_getLanguage() == 'en') : ?>
+                    <h3>MECHANOCROSS is a company that takes on the challenge of mechanochemical technology for organic synthesis.</h3>
+                    <p>We implement "mechanochemical technology for organic synthesis" that has been developed at Hokkaido University, Japan, which can realize a clean and more comfortable society for our stakeholders. Our mission is to address worldwide environmental issues and provide solutions through innovations to catalyze transformative shifts within industries, paving the way for a greener future.</p>
+                    <p>We also provide new functional molecules that are available only through mechanochemical organic synthesis. Our dream at MECHANOCROSS is to create a comfortable society together with companies.</p>
+                    <?php else: ?>
                     <h3>メカノクロスはメカノケミカル<br class="show_sp">有機合成技術で<br class="hide_sp">挑戦する企業です。</h3>
                     <p>クリーンな社会実現・新たな価値創造が可能な北海道大学発 「メカノケミカル有機合成技術」を社会実装し、ステークホルダーにとって、 より「快適」を実現します。世界の環境課題解決を最重要項目と捉え、我々のイノベーションでそのソリューションを提供し、産業界の構造変革を実現します。</p>
                     <p>また、メカノケミカル有機合成技術だからこそできる新しい機能性化合物を提供します。企業様と共に快適な社会を創ることがメカノクロスの夢です。</p>
+                    <?php endif; ?>
                 </div>
                 <div class="button flex left js-anime anime-fadeInUp">
                     <a href="<?php echo esc_url( home_url('/') ); ?>about-us/" class="main">
@@ -100,7 +106,16 @@
         <div id="swiper" class="page__top__business__cont grid swiper js-anime anime-fadeInUp">
             <div class="page__top__business__cont__inner swiper-wrapper">
                 <div class="page__top__business__cont__inner__item swiper-slide">
-                    <a href="<?php echo esc_url( home_url('/') ); ?>what-we-do/" class="flex" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/jpg/top-business-01.jpg);">
+                    <a href="<?php echo esc_url( home_url('/') ); ?>research/" class="flex" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/jpg/top-business-01.jpg);">
+                        <div class="page__top__business__cont__inner__item__title grid">
+                            <h3 class="t-white">メカノケミカル実装研究会</h3>
+                            <p class="font-en t-white">Research</p>
+                        </div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/button-arrow-white.svg" alt="右矢印ボタン">
+                    </a>
+                </div>
+                <div class="page__top__business__cont__inner__item swiper-slide">
+                    <a href="<?php echo esc_url( home_url('/') ); ?>what-we-do/" class="flex" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/jpg/top-business-02.jpg);">
                         <div class="page__top__business__cont__inner__item__title grid">
                             <h3 class="t-white">製品・できること</h3>
                             <p class="font-en t-white">What We Do</p>
@@ -109,7 +124,7 @@
                     </a>
                 </div>
                 <div class="page__top__business__cont__inner__item swiper-slide">
-                    <a href="<?php echo esc_url( home_url('/') ); ?>business-model/" class="flex" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/jpg/top-business-02.jpg);">
+                    <a href="<?php echo esc_url( home_url('/') ); ?>business-model/" class="flex" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/jpg/top-business-03.jpg);">
                         <div class="page__top__business__cont__inner__item__title grid">
                             <h3 class="t-white">ビジネスモデル</h3>
                             <p class="font-en t-white">Business Model</p>
@@ -118,7 +133,7 @@
                     </a>
                 </div>
                 <div class="page__top__business__cont__inner__item swiper-slide">
-                    <a href="<?php echo esc_url( home_url('/') ); ?>sustainability/" class="flex" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/jpg/top-business-03.jpg);">
+                    <a href="<?php echo esc_url( home_url('/') ); ?>sustainability/" class="flex" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/jpg/top-business-04.jpg);">
                         <div class="page__top__business__cont__inner__item__title grid">
                             <h3 class="t-white">サステイナビリティ</h3>
                             <p class="font-en t-white">Sustainability</p>
@@ -142,8 +157,11 @@
         </div>
         <div class="page__top__joint__cont grid">
             <p class="t-white js-anime anime-fadeInUp">メカノケミカル有機合成について興味を持っていただいた企業様のため、メカノケミカル有機合成実装研究会を設立いたしました。<br>研究会では基礎知識や過去の成功例、最新研究等メカノケミカル有機合成を検討するために必要な情報ご提供いたします</p>
-            <img class="hide_sp js-anime anime-fadeInUp" src="<?php echo get_template_directory_uri(); ?>/assets/images/png/joint-project-pc.png" alt="共同研究の誘い">
-            <img class="show_sp js-anime anime-fadeInUp" src="<?php echo get_template_directory_uri(); ?>/assets/images/png/joint-project-sp.png" alt="共同研究の誘い">
+            <div>
+                <img class="hide_sp js-anime anime-fadeInUp" src="<?php echo get_template_directory_uri(); ?>/assets/images/png/joint-project-pc.png" alt="共同研究の誘い">
+                <img class="show_sp js-anime anime-fadeInUp" src="<?php echo get_template_directory_uri(); ?>/assets/images/png/joint-project-sp.png" alt="共同研究の誘い">
+                <a href="https://itogrouphp.eng.hokudai.ac.jp/" target="_blank"></a>
+            </div>
         </div>
         <div class="button flex center js-anime anime-fadeInUp">
             <a href="<?php echo esc_url( home_url('/') ); ?>business-model/" class="main">
@@ -328,6 +346,38 @@
                     </div>
                     <div class="page__top__members__cont__item__right__text">
                         <p>2012年、徳島文理大学薬学部薬学研究科で博士課程を修了(薬学博士)。その後、北海道大学大学院工学研究院の伊藤肇研究室で博士研究員として、ホウ素化合物の新規合成法の開拓に従事。イリジウム触媒を用いたC–Hホウ素化反応や、オゾン酸化を活用したアシルボラン合成反応の開発に成功。2015年9月から、青山学院大学理工学部の生体機能分子合成研究室に異動し、助教として生理活性天然物の全合成や含窒素複素環合成法の開発に従事。2023年7月から伊藤肇研究室の特任講師として着任し、メカノケミカル合成に関する研究プロジェクトに参画。主に研究室と企業様との共同研究を担当。2024年4月よりメカノクロスの技術チーフとして着任予定。これまでに報告した学術論文は30報以上。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="page__top__members__cont__item flex js-anime anime-fadeInUp">
+                <div class="page__top__members__cont__item__left">
+                </div>
+                <div class="page__top__members__cont__item__right grid">
+                    <div class="page__top__members__cont__item__right__title grid">
+                        <h3>
+                            <span class="font-en">Satoru Okada</span>
+                            <span>岡田 理</span>
+                        </h3>
+                        <p class="font-en t-main">Corporate Adviser</p>
+                    </div>
+                    <div class="page__top__members__cont__item__right__text">
+                        <p>国内化学メーカーにて各種製品の営業・事業運営、新規事業開発に携わる。主に欧州・中東地域での建材事業展開の経験が長く、現在国内製造会社を中心とした事業コンサルタント業務を行う。2024年6月からメカノクロス に参画。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="page__top__members__cont__item flex js-anime anime-fadeInUp">
+                <div class="page__top__members__cont__item__left">
+                </div>
+                <div class="page__top__members__cont__item__right grid">
+                    <div class="page__top__members__cont__item__right__title grid">
+                        <h3>
+                            <span class="font-en">Masanori Takahashi</span>
+                            <span>高橋 正憲</span>
+                        </h3>
+                        <p class="font-en t-main">Legal Counsel</p>
+                    </div>
+                    <div class="page__top__members__cont__item__right__text">
+                        <p>2004年北海道大学大学院工学研究科量子物理工学専攻修了後、(株)日立製作所入社、知的財産権本部配属。2007年弁理士試験合格。2012年北海道大学法科大学院修了。2013年司法試験合格。2013年1月より弁護士法人内田・鮫島法律事務所。2023年11月からメカノクロスが利用した支援制度にて知り合い、2024年4月からメカノクロスに参画。</p>
                     </div>
                 </div>
             </div>

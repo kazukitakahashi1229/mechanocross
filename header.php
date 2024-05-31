@@ -137,6 +137,11 @@
                             <span>サステイナビリティ</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="<?php echo esc_url( home_url('/') ); ?>recruit/">
+                            <span>採用情報</span>
+                        </a>
+                    </li>
                     <li class="flex">
                         <a href="<?php echo esc_url( home_url('/') ); ?>contact/" class="flex">
                             <span>お問い合わせ</span>
