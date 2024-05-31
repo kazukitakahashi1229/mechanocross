@@ -6,19 +6,19 @@
 */
 ?>
 <?php get_header(); ?>
-<main class="page__rec">
+<div class="page__rec">
     <!--  FV  -->
     <section class="page__rec__fv">
         <div class="container js-anime anime-fadeInUp">
             <h1 class="page__rec__fv__title font-en t-main">Recruit</h1>
             <p class="page__rec__fv__text">
-                <span>１００年に１度の産業の変革を</span>
-                <span>メカノクロスで一緒に実現しましょう！</span>
-                <span>メカノケミカル有機合成で産業に変革を！</span>
+                <span>有機化学から産業革命を起こす。</span>
+                <span>メカノクロスは世界の環境課題を解決する</span>
+                <span>北海道大学発のスタートアップです</span>
             </p>
             <div class="page__rec__fv__button">
                 <div class="rec__button">
-                    <a href="#entry-form" class="font-en">Entry</a>
+                    <a href="https://open.talentio.com/r/1/c/mechanocross/homes/4385" target="_blank">募集一覧</a>
                 </div>
             </div>
         </div>
@@ -45,6 +45,11 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/jpg/recruit-fv04.jpg" alt="">
                         </div>
                     </li>
+                    <li class="swiper-slide">
+                        <div class="swiper-slide-inner">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/jpg/recruit-fv05.jpg" alt="">
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -57,9 +62,11 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/logo-main-ver.svg" alt="Mechanocross">
                 </div>
                 <div class="page__rec__about__text">
-                    <p>メカノケミカル有機合成は、「環境調和」「高い生産性」「新しい材料」<br class="hide_sp">を提供することで、社会に貢献します。</p>
-                    <p>北海道大学の叡智が集まる化学反応創成研究拠点（WPI-ICReDD）に開発の拠点を構え<br class="hide_sp">企業様との協業のソリューションをここから発信します。</p>
-                    <p>メカノケミカルの世界リーダーと一緒に働きましょう。</p>
+                    <p>現在の有機化学産業は、決して持続可能なものではありません。<br class="hide_sp">例えば医学品や半導体は多くの有機合成反応が製造工程で用いられていますが、<br class="hide_sp">環境負荷の高い石油由来の溶媒と、反応促進に必要な莫大なエネルギーに依存しています。</p>
+                    <p>メカノケミカル有機合成は、物理的な力によって有機化合物のを反応を促す技術です。<br class="hide_sp">私たちは北海道大学にてその最先端の研究を行う中で、この技術こそ<br class="hide_sp">【有機合成の脱溶媒/脱炭素】という世界共通の環境課題を<br class="hide_sp">解決するものだと確信し、メカノクロスを立ち上げました。</p>
+                    <p>メカノクロスは、世界中の会社との協業を通じて社会に不可欠な有機化合物の<br class="hide_sp">製造プロセスを持続可能なものへと変革します。</p>
+                    <p>蒸気機関や電動モーター、コンピュータなど、これまで人類史に刻まれる偉大な<br class="hide_sp">発明とそれによる産業の変革は欧米諸国がリードしてきました。<br class="hide_sp">しかし今、私たちは新たな産業革命の前触れと確かな手応えを感じています。</p>
+                    <p>私たちと100年に1度の産業革命を起こしませんか。</p>
                 </div>
             </div>
         </div>
@@ -74,10 +81,9 @@
                     </div>
                     <div class="page__rec__mvv__item__texts">
                         <h2 class="title font-en t-main">Mission</h2>
-                        <h3 class="copy"><span>メカノケミカル有機合成技術で</span><span>産業界の構造変革を</span></h3>
+                        <h3 class="copy"><span>化学の進化を未来まで繋ぐ</span></h3>
                         <div class="desc">
-                            <p>クリーンな社会実現・新たな価値創造が可能な北海道大学発「メカノケミカル有機合成技術」を社会実装し、ステークホルダーにとって、より「快適」を実現します。世界の環境課題解決を最重要項目と捉え、我々のイノベーションでそのソリューションを提供し、産業界の構造変革します。</p>
-                            <p>また、メカノケミカル有機合成技術だからこそできる新しい機能性化合物を提供します。企業様と共に快適な社会を創ることがメカノクロスの夢です。</p>
+                            <p>今の工業社会において、有機化合物とその合成反応というのは欠かせないものになっています。医薬品や機械製品といった人間社会に必要なものの多くは複数の有機合成反応を経て製造され、それと同時に大量の石油精製物と莫大な電力を消費して作られています。<br>　いま当たり前に享受されている多くの工業製品は、有機化学におけるこれまでの人類の研究、試行錯誤の歴史でもあります。その歴史を絶やさず未来へ引き継いでいくために、私たちは有機合成というアプローチから工業の脱石油・脱炭素を実現し、人類社会の発展に貢献します。</p>
                         </div>
                     </div>
                 </li>
@@ -87,10 +93,9 @@
                     </div>
                     <div class="page__rec__mvv__item__texts">
                         <h2 class="title font-en t-main">Vision</h2>
-                        <h3 class="copy"><span>メカノケミカル有機合成技術で挑戦する</span></h3>
+                        <h3 class="copy"><span>メカノケミカル有機合成を</span><span>産業基盤として確立し、</span><span>化学の世界で日本から産業革命を起こす</span></h3>
                         <div class="desc">
-                            <p>○ 溶媒を極少量にしたサスティナブルなプロセスを提供します<br>○ パートナー様とともに、産業界の温室効果ガス削減を達成します<br>○ 従来合成法ではできなかった高機能化合物を提供します<br>○ 夢ある技術を社会実装する取り組みで、産業界の発展、および、人材育成に取り組みます<br>○ 今までにない研究開発施設を作り、最高の職場環境を作ります<br>○ やりがいのある挑戦を提供します</p>
-                            <p>関係する全ての人を成長させる会社を目指します。</p>
+                            <p>「メカノケミカル有機合成技術」を社会実装することで、有機化学というアプローチから工業社会のグリーントランスフォーメーションを実現します。<br>　私たちは世界の環境課題解決を経営における最重要項目と捉え、あらゆるステークホルダと共に今を生きる人類としての責任を果たします。また、それと同時にメカノケミカル有機合成技術だからこそできる新しい機能性化合物の開発に取り組みます。世界中のメーカーと共に快適な社会を創ることも、メカノクロスの使命です。</p>
                         </div>
                     </div>
                 </li>
@@ -99,13 +104,10 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/jpg/recruit-value.jpg" alt="">
                     </div>
                     <div class="page__rec__mvv__item__texts">
-                        <h2 class="title font-en t-main">Values</h2>
-                        <h3 class="copy"><span>高水準の研究技術で</span><span>世界の課題解決を目指す</span></h3>
+                        <h2 class="title font-en t-main">Credo</h2>
+                        <h3 class="copy"><span>持続可能な”人”の成長環境を作る</span></h3>
                         <div class="desc">
-                            <p>「メカノケミカル有機合成反応の開発」<br>北海道大学伊藤研究室で培ったメカノケミカル有機合成反応の改良と量産化検討を行い、企業様の「ニーズ」に応えてまいります。 </p>
-                            <p>「有機合成用メカノデバイスの開発」<br>有機合成に必要な条件を見出し、それらを装備したデバイスを開発することで、企業様へのプロセス導入をサポートします。 </p>
-                            <p>「知財戦略の構築」 <br>事業線楽に基づいた特許戦略を一緒に構築しましょう。 企業様との取り組みの中から生まれるノウハウの他に、戦略に基づく必要な特許出願を行なってまいります。</p>
-                            <p>「海外顧客開拓」<br>「グリーンテックの投資が大きい欧州市場」また、「医薬品事業を狙った米国市場」を一緒に開拓しましょう。</p>
+                            <p>研究室から出発した私たちは、研究とは人の持続的な思考と試行の積み重ねであることを誰よりも知っています。その研究から生まれる偉大な発明と、その発明の社会実装もまた、人のたゆまぬ尽力によって為されるのでしょう。全ては人が為すことであり、人こそが私たちにとって一番の資産です。また、持続可能な社会の実現を目指す私たちが持続不可能な存在であったならばそれは本末転倒です。共に働く仲間が成長し続けることこそが、メカノクロスが持続可能な会社となるには必要だと考えています。<br>　人も組織も有機的な存在です。ともに前向きに、ときに変化を恐れず、進化し成長を続けていきましょう。</p>
                         </div>
                     </div>
                 </li>
@@ -122,68 +124,48 @@
             <dl class="page__rec__positions__list js-anime anime-fadeInUp">
                 <div class="page__rec__positions__item">
                     <dt>
-                        <span class="position t-main">技術・マネージャー</span>
-                        <span class="num">3名</span>
-                        <span class="desc">顧客のニーズに合わせたメカノケミカル有機合成反応の検討、量産化検討を実施</span>
+                        <a href="https://open.talentio.com/r/1/c/mechanocross/pages/93183" target="_blank">
+                            <span class="position t-main">R&D プロジェクトマネージャ</span>
+                        </a>
                     </dt>
                     <dd>
-                        条件：有機化学バックラウンド、英語TOEIC800点以上、もしくは、それに準ずる。<br>給与：500～1000万円（ご経歴と相談の上決定）
+                        顧客のニーズに合わせたメカノケミカル有機合成反応の検討、量産化検討を実施
                     </dd>
                 </div>
                 <div class="page__rec__positions__item">
                     <dt>
-                        <span class="position t-main">技術・マネージャー</span>
-                        <span class="num">1名</span>
-                        <span class="desc">メカノケミカル有機合成用デバイスの設計</span>
+                        <a href="https://open.talentio.com/r/1/c/mechanocross/pages/93184" target="_blank">
+                            <span class="position t-main">デバイス設計</span>
+                        </a>
                     </dt>
                     <dd>
-                        条件：化学工学バックグラウンド、英語TOEIC800点以上、もしくは、それに準ずる。<br>給与：500～1000万円（ご経歴と相談の上決定）
+                        メカノケミカル有機合成用デバイスの設計・安全性検討など
                     </dd>
                 </div>
                 <div class="page__rec__positions__item">
                     <dt>
-                        <span class="position t-main">技術・マネージャー</span>
-                        <span class="num">1名</span>
-                        <span class="desc">メカノケミカル有機合成用デバイスの安全性検討</span>
+                        <a href="https://open.talentio.com/r/1/c/mechanocross/pages/93186" target="_blank">
+                            <span class="position t-main">管理部長</span>
+                        </a>
                     </dt>
                     <dd>
-                        条件：メーカーで生産管理等のバックグラウンド。GMP対応経験がれば尚良い。<br>給与：500～1000万円（ご経歴と相談の上決定）
+                        人事・総務、経理財務など管理部の立上げ
                     </dd>
                 </div>
                 <div class="page__rec__positions__item">
                     <dt>
-                        <span class="position t-main">管理部長</span>
-                        <span class="num">1名</span>
-                        <span class="desc">人事・総務、等管理職</span>
+                        <a href="https://open.talentio.com/r/1/c/mechanocross/pages/93188" target="_blank">
+                            <span class="position t-main">海外事業開発</span>
+                        </a>
                     </dt>
                     <dd>
-                        条件：大手企業で管理経験５年以上。<br>給与：500～万円（ご経歴と相談の上決定）
-                    </dd>
-                </div>
-                <div class="page__rec__positions__item">
-                    <dt>
-                        <span class="position t-main">海外営業・マネージャー</span>
-                        <span class="num">2〜4名</span>
-                        <span class="desc">海外の顧客を開拓を行う</span>
-                    </dt>
-                    <dd>
-                        条件：ネイティブレベルで交渉可能。<br>給与：1000～万円（ご経歴と相談の上決定）
-                    </dd>
-                </div>
-                <div class="page__rec__positions__item">
-                    <dt>
-                        <span class="position t-main">CFO</span>
-                        <span class="num">2〜4名</span>
-                        <span class="desc">資金調達</span>
-                    </dt>
-                    <dd>
-                        条件：国内外ディープテックベンチャーでエクイティの経験、英語TOEIC800点以上、もしくは、それに準ずる。
+                        海外の製薬/化学メーカーを中心とした顧客開拓
                     </dd>
                 </div>
             </dl>
             <div class="page__rec__positions__button">
                 <div class="rec__button">
-                    <a href="#entry-form" class="font-en">Entry</a>
+                    <a href="https://open.talentio.com/r/1/c/mechanocross/homes/4385" target="_blank">募集一覧</a>
                 </div>
             </div>
         </div>
@@ -206,13 +188,13 @@
                     <div class="icon">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/recruit-icon-benefit02.svg" alt="">
                     </div>
-                    <p class="desc">技術職は、伊藤研の雑誌会等に参加可能。博士課程取得も相談可能。</p>
+                    <p class="desc">博士課程取得等のパラレルキャリアも相談可能</p>
                 </li>
                 <li class="page__rec__benefits__item">
                     <div class="icon">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/recruit-icon-benefit03.svg" alt="">
                     </div>
-                    <p class="desc">交通費支給</p>
+                    <p class="desc">テレワーク相談可能（ポジションによる）</p>
                 </li>
                 <li class="page__rec__benefits__item">
                     <div class="icon">
@@ -243,26 +225,26 @@
                 </li>
                 <li class="page__rec__process__item">
                     <span class="index font-en t-main">Step 03</span>
-                    <h3 class="heading">会社の目指すところを共有</h3>
-                    <p class="desc">期待するJobをお伝え、適正とCulture Fitを確認</p>
+                    <h3 class="heading">最終面接</h3>
+                    <p class="desc">会社の目指すところを共有、適正とCulture Fitを確認</p>
                 </li>
             </ol>
         </div>
     </section>
-    <!--  Entry form  -->
-    <section class="page__rec__form" id="entry-form">
-        <div class="container">
-            <div class="page__rec__form__head js-anime anime-fadeInUp">
-                <div class="rec__title rec__title--wh">
-                    <p class="jp">エントリーフォーム</p>
-                    <h2 class="en">Entry Form</h2>
-                </div>
-                <p class="page__rec__form__lead">
-                    全ての項目をご入力の上<br>エントリーフォームを送信してください。
-                </p>
-            </div>
-            <div class="page__rec__form__cont js-anime anime-fadeInUp">
-                <?php remove_filter('the_content', 'wpautop'); the_content(); ?>
+    <!-- Start CTA -->
+    <section class="page__rec__cta">
+        <div class="container flex">
+            <div class="cta__recruit">
+                <a href="<?php echo esc_url( home_url('/') ); ?>contact/" class="recruit flex">
+                    <div class="cta__recruit__title">
+                        <h2 class="t-white">お問い合わせ</h2>
+                        <p class="font-en t-white">Contact</p>
+                    </div>
+                    <div class="cta__recruit__text">
+                        <p class="t-white">採用に関するご相談やご質問等ございましたら<br>お気軽にご連絡ください。</p>
+                    </div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/right-arrow-white-outline.svg" alt="右矢印のアイコン">
+                </a>
             </div>
         </div>
     </section>

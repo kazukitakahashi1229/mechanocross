@@ -59,7 +59,7 @@
             const swiper = new Swiper('#swiper', {
                 loop: true, // ループ有効
                 spaceBetween: 40,
-                slidesPerView: 2.5, // 一度に表示する枚数
+                slidesPerView: 2.2, // 一度に表示する枚数
                 speed: 6000, // ループの時間
                 allowTouchMove: false, // スワイプ無効
                 autoplay: {

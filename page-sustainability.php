@@ -24,10 +24,10 @@
         <div class="container grid">
             <div class="section__title__sub grid white js-anime anime-fadeInUp">
                 <div class="section__title__sub__inner">
-                    <h2 class="t-white">メカノケミカルでできること</h2>
+                    <h2 class="t-white">サステイナブルへの取り組み</h2>
                 </div>
                 <div class="section__title__sub__lead">
-                    <p class="t-white">化学産業は、様々な化学反応を活用して医薬品や衣類、精密電子部品の材料を提供する、現代社会で最も重要な産業です。<br>メカノクロスは独自の合成技術を活用し、「CO₂削減」「未利用資源の活用」「省エネルギー」をミッションに掲げ、化学産業にイノベーションを起こすことで、サスティナブルな社会を目指します。</p>
+                    <p class="t-white">化学産業は、様々な化学反応を活用して医薬品や衣類、精密電子部品の材料を提供する、現代社会で最も重要な産業です。<br>メカノクロスは独自の合成技術を活用し、「CO₂削減」「未利用資源の活用」「省エネルギー」をミッションに掲げ、化学産業にイノベーションを起こすことで、サステイナブルな社会を目指します。</p>
                 </div>
             </div>
             <div class="page__sustainability__main__cont flex">

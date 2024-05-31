@@ -54,7 +54,7 @@
                         </li>
                     </ul>
                     <ul>
-                        <li><a class="t-white" href="<?php echo esc_url( home_url('/') ); ?>sustainability/">サスティナビリティ</a></li>
+                        <li><a class="t-white" href="<?php echo esc_url( home_url('/') ); ?>sustainability/">サステイナビリティ</a></li>
                     </ul>
                     <ul>
                         <li><a class="t-white" href="<?php echo esc_url( home_url('/') ); ?>news/">お知らせ</a></li>
@@ -65,14 +65,14 @@
                             </ul>
                         </li>
                     </ul>
-                    <!-- <ul>
+                    <ul>
                         <li><a class="t-white" href="<?php echo esc_url( home_url('/') ); ?>recruit/">採用情報</a></li>
-                        <li><a class="t-white" href="">プライバシーポリシー</a></li>
-                    </ul> -->
+                        <li><a class="t-white" href="<?php echo esc_url( home_url('/') ); ?>privacy-policy/">プライバシーポリシー</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer__bottom">
-                <a href="mailto: tomohisa.saito@mechanocross.com">
+                <a href="<?php echo esc_url( home_url('/') ); ?>contact/">
                     <div class="footer__bottom__left flex">
                         <p class="font-en">Contact</p>
                         <p>ご相談やご質問等ございましたら<br>お気軽にご連絡ください。</p>

@@ -34,7 +34,7 @@
                 <div class="page__about__philo__cont__main flex">
                     <div class="page__about__philo__cont__main__item flex js-anime anime-fadeInUp">
                         <p class="font-en t-main">01</p>
-                        <h4>溶媒を極少量にしたサスティナブルなプロセスを提供します</h4>
+                        <h4>溶媒を極少量にしたサステイナブルなプロセスを提供します</h4>
                     </div>
                     <div class="page__about__philo__cont__main__item flex js-anime anime-fadeInUp">
                         <p class="font-en t-main">02</p>
@@ -61,6 +61,21 @@
                     <h3>関係する全ての⼈を<br class="show_tab">成⻑させる会社を⽬指します。</h3>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/logo-main-ver.svg" alt="ロゴ">
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start VIDEO -->
+    <section class="page__about__video">
+        <div class="container sm flex">
+            <div class="page__about__video__cont js-anime anime-fadeInUp">
+                <iframe width="" height="" src="https://www.youtube.com/embed/KW96OeD6Dls?si=wUrVx_pNdvgZ4DEy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="button flex center js-anime anime-fadeInUp">
+                <a href="https://www.youtube.com/watch?v=KW96OeD6Dls" target="_blank" class="main">
+                    <span class="font-en">YouTube Channel</span>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/button-arrow-main.svg" alt="右矢印ボタン">
+                </a>
             </div>
         </div>
     </section>
@@ -96,7 +111,7 @@
                             <p>社員数</p>
                         </div>
                         <div class="page__about__company__cont__left__item__right">
-                            <p>4名（4月より技術チーフの佐々木氏が参画）</p>
+                            <p>6名</p>
                         </div>
                     </div>
                     <div class="page__about__company__cont__left__item flex">

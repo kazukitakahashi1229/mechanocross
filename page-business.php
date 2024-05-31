@@ -42,13 +42,13 @@
         <div class="container grid">
             <div class="section__title__sub grid main">
                 <div class="section__title__sub__inner js-anime anime-fadeInUp">
-                    <h2 class="">共同研究の方針について</h2>
+                    <h2 class="">テスト評価プロセスの方針について</h2>
                 </div>
-                <div class="section__title__sub__lead js-anime anime-fadeInUp">
+                <div class="section__title__sub__lead flex js-anime anime-fadeInUp">
                     <p class="">北海道大学大学院工学研究院 伊藤研究室では 「すべての有機合成反応の高効率メカノケミカル化」を目指した基礎研究を行います。<br>
-                    企業様からの共同研究についてはメカノクロスにて研究を行いますが、<br>
-                    伊藤卓越教授、久保田准教授には取締役で参加頂くため、技術水準を保ったまま企業様のニーズにお応えできます。<br>
-                    皆様のメカノケミカル有機合成の実装へのお手伝いをさせて頂きます。</p>
+企業様からのテスト評価プロセスについてはメカノクロスにて研究を行いますが、伊藤卓越教授、久保田准教授には取締役で参加頂くため、技術水準を保ったまま企業様のニーズにお応えできます。
+皆様のメカノケミカル有機合成の実装へのお手伝いをさせて頂きます。</p>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/png/business-process.png" alt="テスト評価プロセス">
                 </div>
             </div>
             <div class="page__business__dir__cont">
@@ -64,8 +64,14 @@
                     <h2 class="">ビジネスモデル</h2>
                 </div>
             </div>
-            <div class="page__business__model__cont js-anime anime-fadeInUp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/png/business-model.png" alt="ビジネスモデル">
+            <div class="page__business__model__cont flex js-anime anime-fadeInUp">
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/png/business-model.png" alt="ビジネスモデル">
+                </div>
+                <h3>テスト評価プロセス(商標予定：MechanoX™︎)</h3>
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/png/business-process-2.png" alt="テスト評価プロセス">
+                </div>
             </div>
         </div>
     </section>

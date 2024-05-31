@@ -48,7 +48,7 @@
                         <p class="font-en t-white">Joint Project</p>
                     </div>
                     <div class="cta__recruit__text">
-                        <p class="t-white">カノケミカル有機合成について興味を持っていただいた企業様のため、 メカノケミカル有機合成実装研究会を設立いたしました。<br> 研究会では基礎知識や過去の成功例、最新研究等メカノケミカル有機合成を検討するために必要な情報ご提供いたします。</p>
+                        <p class="t-white">メカノケミカル有機合成について興味を持っていただいた企業様のため、 メカノケミカル有機合成実装研究会を設立いたしました。<br> 研究会では基礎知識や過去の成功例、最新研究等メカノケミカル有機合成を検討するために必要な情報ご提供いたします。</p>
                     </div>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/right-arrow-white-outline.svg" alt="右矢印のアイコン">
                 </a>
