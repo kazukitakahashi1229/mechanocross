@@ -30,7 +30,11 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/logo-main-ver.svg" alt="ロゴ">
             <div class="page__top__mv__main__title grid">
                 <h1>Our Innovative <br>Chemical Solutions <br>For the Future of Industry</h1>
-                <p>メカノケミカル有機合成で産業に変革を</p>
+                <?php if (qtranxf_getLanguage() == 'en') : ?>
+                    <p>Mechanochemical Organic Synthesis for Revolutionizing Industry</p>
+                <?php else: ?>
+                    <p>メカノケミカル有機合成で産業に変革を</p>
+                <?php endif; ?>
             </div>
         </div>
     </div>
@@ -156,7 +160,11 @@
             <p class="font-en t-white">Joint Project</p>
         </div>
         <div class="page__top__joint__cont grid">
-            <p class="t-white js-anime anime-fadeInUp">メカノケミカル有機合成について興味を持っていただいた企業様のため、メカノケミカル有機合成実装研究会を設立いたしました。<br>研究会では基礎知識や過去の成功例、最新研究等メカノケミカル有機合成を検討するために必要な情報ご提供いたします</p>
+            <?php if (qtranxf_getLanguage() == 'en') : ?>
+                <p class="t-white js-anime anime-fadeInUp">The Mechano Chemistry Research Group was established for companies interested in mechanochemical technology for organic synthesis.<br>The research group provides members with the information such as basic knowledge, research achievements and the latest research etc. you need to consider mechanochemical organic synthesis. Additionally, meetings are available several times a year to consider collaboration.
+            <?php else: ?>
+                <p class="t-white js-anime anime-fadeInUp">メカノケミカル有機合成について興味を持っていただいた企業様のため、メカノケミカル有機合成実装研究会を設立いたしました。<br>研究会では基礎知識や過去の成功例、最新研究等メカノケミカル有機合成を検討するために必要な情報をご提供いたします。また、協業のために、年数回を目処にミーティングをご活用ください。</p>
+            <?php endif; ?>
             <div>
                 <img class="hide_sp js-anime anime-fadeInUp" src="<?php echo get_template_directory_uri(); ?>/assets/images/png/joint-project-pc.png" alt="共同研究の誘い">
                 <img class="show_sp js-anime anime-fadeInUp" src="<?php echo get_template_directory_uri(); ?>/assets/images/png/joint-project-sp.png" alt="共同研究の誘い">
@@ -294,7 +302,11 @@
                         <p class="font-en t-main">Representative Director / President & Chief Executive Officer</p>
                     </div>
                     <div class="page__top__members__cont__item__right__text">
-                        <p>2008年 北海道大学理学院(有機金属化学研究室 指導教官が伊藤肇先生)修士課程を修了。大手化学メーカーで、光学材料関連R＆Dから製品設計、生産化までの一気通貫業務を担当し、アジア圏のお客様を担当。その後、同業務で、海外子会社のマネージメント業務として、欧州のお客様を担当した。2017年にエレクトロニクス関連の企画推進業務に従事。その後、新規事業開拓のためのマーケティング業務で、サーキュラーエコノミー事業の立案を経験。2020年から半導体材料と医薬関連事業を行う企業で、マネージメント職として新規事業創出業務に従事。半導体材料プロジェクト立ち上げ、アフリカにおける環境事業の立案、水上太陽光発電事業拡大のための環境アセスメントなどを経験。2023年11月に株式会社メカノクロスを設立し、CEOを務める。</p>
+                        <?php if (qtranxf_getLanguage() == 'en') : ?>
+                            <p>In 2009, Tomohisa Saito completed a Master's program at the Faculty of Science, Hokkaido University (Advisor: Prof. Hajime Ito). At a major chemical manufacturer, he was in charge of the entire development process, from R&D related to optical materials to product design and production, and was in charge of customers in the Asian region. Later, in the same job, he managed an overseas subsidiary and European customers. In 2017, he was engaged in electronics-related planning and promotion. Beginning in 2020, he was engaged in new business creation in a management position at a company engaged in semiconductor material- and pharmaceutical-related businesses. In November 2023, he founded MECHANOCROSS Co., Ltd. as a Representative Director and CEO.</p>
+                        <?php else: ?>
+                            <p>2008年 北海道大学理学院(有機金属化学研究室 指導教官が伊藤肇先生)修士課程を修了。大手化学メーカーで、光学材料関連R＆Dから製品設計、生産化までの一気通貫業務を担当し、アジア圏のお客様を担当。その後、同業務で、海外子会社のマネージメント業務として、欧州のお客様を担当した。2017年にエレクトロニクス関連の企画推進業務に従事。その後、新規事業開拓のためのマーケティング業務で、サーキュラーエコノミー事業の立案を経験。2020年から半導体材料と医薬関連事業を行う企業で、マネージメント職として新規事業創出業務に従事。半導体材料プロジェクト立ち上げ、アフリカにおける環境事業の立案、水上太陽光発電事業拡大のための環境アセスメントなどを経験。2023年11月に株式会社メカノクロスを設立し、CEOを務める。</p>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
@@ -311,7 +323,11 @@
                         <p class="font-en t-main">Director / Member of the Board & Technical Advisor</p>
                     </div>
                     <div class="page__top__members__cont__item__right__text">
-                        <p>1996年京都大学大学院工学研究科博士課程修了、同年筑波大学化学系助手、1999年分子科学研究所助手、米国スクリプス研究所客員研究員、2002年北海道大学理学研究科助教授を経て、2010年に北海道大学大学院工学研究院にて、鈴木章(2010年ノーベル賞受賞)・宮浦憲夫教授が主宰された有機元素化学研究室の教授に就任。2018年より北海道大学化学反応創成研究拠点(WPI-ICReD)副拠点長、2019年よりJST CREST 「革新的合成」研究代表者、2022年より北海道大学卓越教授、日本化学会有機化学ディビジョン主査、英国王立化学会RSC Mechanochemistry誌Associate Editor、2014年日本化学会学術賞、2023年北海道ベンチャー支援ピッチにて最優秀賞・北海道知事賞受賞。メカノケミカル有機合成の研究において世界トップを走っている。</p>
+                        <?php if (qtranxf_getLanguage() == 'en') : ?>
+                            <p>Hajime Ito earned his Ph.D. degree in 1996 from the Graduate School of Engineering, Kyoto University, and was then promoted to Assistant Professor in the Department of Chemistry, University of Tsukuba in the same year. In 1999, he became a Research Assistant at the Institute for Molecular Science and Visiting Scholar at the Scripps Research Institute, USA. In 2002, he was appointed as an Associate Professor at the Graduate School of Science, Hokkaido University. In 2010, he was appointed as a Professor in the Laboratory of Organoelement Chemistry, which was previously led by Prof. Akira Suzuki (2010 Nobel Prize winner) and Prof. Norio Miyaura, at the Graduate School of Engineering, Hokkaido University. Beginning in 2018, he has served as the Deputy Director of the WPI-ICReDD, Hokkaido University. He has also served as a Principal Investigator of JST CREST "Innovative Synthesis" since 2019. In 2022, he was appointed as a Distinguished Professor at Hokkaido University, Chief Investigator of the Organic Chemistry Division in The Chemical Society of Japan, and Associate Editor, RSC Mechanochemistry, Royal Society of Chemistry, UK. He received the 2014 Academic Award from the Chemical Society of Japan, and the Hokkaido Governor's Award at the 2023 Hokkaido Venture Support Pitch. He is a world leader in mechanochemical organic synthesis research.</p>
+                        <?php else: ?>
+                            <p>1996年京都大学大学院工学研究科博士課程修了、同年筑波大学化学系助手、1999年分子科学研究所助手、米国スクリプス研究所客員研究員、2002年北海道大学理学研究科助教授を経て、2010年に北海道大学大学院工学研究院にて、鈴木章(2010年ノーベル賞受賞)・宮浦憲夫教授が主宰された有機元素化学研究室の教授に就任。2018年より北海道大学化学反応創成研究拠点(WPI-ICReD)副拠点長、2019年よりJST CREST 「革新的合成」研究代表者、2022年より北海道大学卓越教授、日本化学会有機化学ディビジョン主査、英国王立化学会RSC Mechanochemistry誌Associate Editor、2014年日本化学会学術賞、2023年北海道ベンチャー支援ピッチにて最優秀賞・北海道知事賞受賞。メカノケミカル有機合成の研究において世界トップを走っている。</p>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
@@ -328,7 +344,11 @@
                         <p class="font-en t-main">Director / Member of the Board & Technical Advisor</p>
                     </div>
                     <div class="page__top__members__cont__item__right__text">
-                        <p>2016年、北海道大学大学院工学研究院で博士課程を修了(工学博士)。その後、米国・カリフォルニア大学バークレー校で博士研究員として不斉相間移動触媒の研究に従事。2017年、米国・マサチューセッツ工科大学に異動し、博士研究員としてバイオコンジュゲーションに関する研究に従事。2018年から北海道大学伊藤肇研究室に特任助教として着任し、メカノケミカル合成に関する研究プロジェクトを伊藤教授とともに立ち上げる。2021年より同大学大学院准教授に昇任。2023年11月にメカノクロスを設立し、取締役・技術顧問を務める。第72回 日本化学会進歩賞、令和4年度 北海道大学教育研究総長表彰、MechSustInd International Award、2019 ACP Lectureship Awardなど受賞多数。</p>
+                        <?php if (qtranxf_getLanguage() == 'en') : ?>
+                            <p>Koji Kubota earned his Ph.D. in 2016 under the supervision of Professor Hajime Ito at Hokkaido University. He then joined the laboratory of Professor F. Dean Toste at the University of California, Berkeley, as a postdoctoral fellow. In 2017, he transferred to the Massachusetts Institute of Technology and joined the laboratory of Professor Stephen L. Buchwald as a JSPS overseas research fellow. In 2018, he began his academic research on mechanochemical synthesis as part of the Ito group at Hokkaido University and was promoted to Associate Professor in 2021. In November 2023, he founded MECHNOCROSS Co., Ltd., where he serves as a Director and Technical Advisor. He has received numerous awards, including the 72nd Annual Award for Progress from the Chemical Society of Japan, 2022 Hokkaido University President's Award for Education and Research, MechSustInd International Award, and 2019 ACP Lectureship Award.</p>
+                        <?php else: ?>  
+                            <p>2016年、北海道大学大学院工学研究院で博士課程を修了(工学博士)。その後、米国・カリフォルニア大学バークレー校で博士研究員として不斉相間移動触媒の研究に従事。2017年、米国・マサチューセッツ工科大学に異動し、博士研究員としてバイオコンジュゲーションに関する研究に従事。2018年から北海道大学伊藤肇研究室に特任助教として着任し、メカノケミカル合成に関する研究プロジェクトを伊藤教授とともに立ち上げる。2021年より同大学大学院准教授に昇任。2023年11月にメカノクロスを設立し、取締役・技術顧問を務める。第72回 日本化学会進歩賞、令和4年度 北海道大学教育研究総長表彰、MechSustInd International Award、2019 ACP Lectureship Awardなど受賞多数。</p>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
@@ -345,7 +365,11 @@
                         <p class="font-en t-main">Technical Chief</p>
                     </div>
                     <div class="page__top__members__cont__item__right__text">
-                        <p>2012年、徳島文理大学薬学部薬学研究科で博士課程を修了(薬学博士)。その後、北海道大学大学院工学研究院の伊藤肇研究室で博士研究員として、ホウ素化合物の新規合成法の開拓に従事。イリジウム触媒を用いたC–Hホウ素化反応や、オゾン酸化を活用したアシルボラン合成反応の開発に成功。2015年9月から、青山学院大学理工学部の生体機能分子合成研究室に異動し、助教として生理活性天然物の全合成や含窒素複素環合成法の開発に従事。2023年7月から伊藤肇研究室の特任講師として着任し、メカノケミカル合成に関する研究プロジェクトに参画。主に研究室と企業様との共同研究を担当。2024年4月よりメカノクロスの技術チーフとして着任予定。これまでに報告した学術論文は30報以上。</p>
+                        <?php if (qtranxf_getLanguage() == 'en') : ?>
+                            <p>In 2012, Ikuo Sasaki completed his doctoral studies at the Graduate School of Pharmaceutical Sciences, Faculty of Pharmaceutical Sciences, Tokushima Bunri University. He then worked as a postdoctoral researcher in the laboratory of Professor Hajime Ito at the Graduate School of Engineering, Hokkaido University, where he pioneered novel synthetic methods for organoboron compounds. In September 2015, he moved to the Laboratory of Biofunctional Molecular Synthesis in the Faculty of Science and Engineering, Aoyama Gakuin University, where he worked as an Assistant Professor and conducted research on the total synthesis of bioactive natural products and the development of synthetic methods for nitrogen-containing heterocycles. In July 2023, he joined the Ito group as a Specially Appointed Lecturer and participated in research projects related to mechanochemical synthesis. Since April 2024, he has served as the Technical Chief at MECHANOCROSS Co., Ltd. He has published more than 30 scientific papers to date.</p>
+                        <?php else: ?>
+                            <p>2012年、徳島文理大学薬学部薬学研究科で博士課程を修了(薬学博士)。その後、北海道大学大学院工学研究院の伊藤肇研究室で博士研究員として、ホウ素化合物の新規合成法の開拓に従事。イリジウム触媒を用いたC–Hホウ素化反応や、オゾン酸化を活用したアシルボラン合成反応の開発に成功。2015年9月から、青山学院大学理工学部の生体機能分子合成研究室に異動し、助教として生理活性天然物の全合成や含窒素複素環合成法の開発に従事。2023年7月から伊藤肇研究室の特任講師として着任し、メカノケミカル合成に関する研究プロジェクトに参画。主に研究室と企業様との共同研究を担当。2024年4月よりメカノクロスの技術チーフとして着任予定。これまでに報告した学術論文は30報以上。</p>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
