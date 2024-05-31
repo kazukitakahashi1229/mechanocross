@@ -26,11 +26,15 @@
             align-items: center;
             position: relative;
             z-index: 10;
+            flex-wrap: nowrap;
             @include mq('tab') {
                 width: 100%;
                 column-gap: initial;
                 row-gap: 4rem;
                 text-align: center;
+            }
+            @include mq('sp') {
+                flex-wrap: wrap;
             }
             img {
                 width: 28rem;
