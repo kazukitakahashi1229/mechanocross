@@ -24,18 +24,10 @@
         <div class="container grid">
             <div class="section__title__sub grid white">
                 <div class="section__title__sub__inner">
-                    <?php if (qtranxf_getLanguage() == 'en') : ?>
-                        <h2 class="t-white js-anime anime-fadeInUp">Three Core Pillars</h2>
-                    <?php else: ?>
-                        <h2 class="t-white js-anime anime-fadeInUp">３本の柱</h2>
-                    <?php endif; ?>
+                    <h2 class="t-white js-anime anime-fadeInUp">３本の柱</h2>
                 </div>
                 <div class="section__title__sub__lead js-anime anime-fadeInUp">
-                    <?php if (qtranxf_getLanguage() == 'en') : ?>
-                        <p class="t-white">Our Business model is based on three core pillars below<br>Consultancy and new reactions using Know-How and research findings of Hokkaido university, Development of new catalysts for mechanochemistry, Construction and sales of compound libraries and databases、Scale up of mechanochemical synthesis, Development of devices shift towards on-demand chemical reactions    </p>
-                    <?php else: ?>
-                        <p class="t-white">我々のビジネスモデルは次の3つの柱からなります。 大学での研究成果、ノウハウを活用したコンサルや新反応、新触媒開発、コンピュータの活用を軸にした、化合物ライブラリやデータベースの構築と販売、そしてメカノケミカル合成プロセスの大型化、および化学反応のオンデマンド化を進めるためのデバイス開発です。</p>
-                    <?php endif; ?>
+                    <p class="t-white">我々のビジネスモデルは次の3つの柱からなります。 大学での研究成果、ノウハウを活用したコンサルや新反応、新触媒開発、コンピュータの活用を軸にした、化合物ライブラリやデータベースの構築と販売、そしてメカノケミカル合成プロセスの大型化、および化学反応のオンデマンド化を進めるためのデバイス開発です。</p>
                 </div>
             </div>
             <div class="page__business__bases__cont">
@@ -50,20 +42,12 @@
         <div class="container grid">
             <div class="section__title__sub grid main">
                 <div class="section__title__sub__inner js-anime anime-fadeInUp">
-                    <?php if (qtranxf_getLanguage() == 'en') : ?>
-                        <h2 class="">Policy for test and evaluation process</h2>
-                    <?php else: ?>
-                        <h2 class="">テスト評価プロセスの方針について</h2>
-                    <?php endif; ?>
+                    <h2 class="">テスト評価プロセスの方針について</h2>
                 </div>
                 <div class="section__title__sub__lead flex js-anime anime-fadeInUp">
-                    <?php if (qtranxf_getLanguage() == 'en') : ?>
-                        <p class="">The Ito Laboratory, Graduate School of Engineering, Hokkaido University, carries out basic research aiming at the “all organic synthesis reactions are replaced by mechanochemical reactions with high efficiency”.<br>MECHANOCROSS conducts research on the test and evaluation process requested by various companies. We can meet the needs of various companies with a high level of mechanochemical organic synthesis technology through the participation of Distinguished Professor Ito and Associate Professor Kubota on our Board of Directors.<br>We support you to implement mechanochemical organic synthesis.</p>
-                    <?php else: ?>
-                        <p class="">北海道大学大学院工学研究院 伊藤研究室では 「すべての有機合成反応の高効率メカノケミカル化」を目指した基礎研究を行います。<br>
-    企業様からのテスト評価プロセスについてはメカノクロスにて研究を行いますが、伊藤卓越教授、久保田准教授には取締役で参加頂くため、技術水準を保ったまま企業様のニーズにお応えできます。
-    皆様のメカノケミカル有機合成の実装へのお手伝いをさせて頂きます。</p>
-                    <?php endif; ?>
+                    <p class="">北海道大学大学院工学研究院 伊藤研究室では 「すべての有機合成反応の高効率メカノケミカル化」を目指した基礎研究を行います。<br>
+企業様からのテスト評価プロセスについてはメカノクロスにて研究を行いますが、伊藤卓越教授、久保田准教授には取締役で参加頂くため、技術水準を保ったまま企業様のニーズにお応えできます。
+皆様のメカノケミカル有機合成の実装へのお手伝いをさせて頂きます。</p>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/png/business-process.png" alt="テスト評価プロセス">
                 </div>
             </div>
