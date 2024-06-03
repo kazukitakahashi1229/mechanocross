@@ -55,7 +55,7 @@
         </div>
     </section>
     <!--  About  -->
-    <section class="page__rec__about">
+    <div class="page__rec__about">
         <div class="container">
             <div class="page__rec__about__cont js-anime anime-fadeInUp">
                 <div class="page__rec__about__logo">
@@ -70,7 +70,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!--  Mission Vision Value  -->
     <section class="page__rec__mvv">
         <div class="container">
@@ -118,8 +118,12 @@
     <section class="page__rec__positions">
         <div class="container">
             <div class="rec__title js-anime anime-fadeInUp">
-                <p class="jp">募集職種</p>
-                <h2 class="en">Open Positions</h2>
+                <?php if (qtranxf_getLanguage() == 'en') : ?>
+                    <h2 class="english">Open Positions</h2>
+                <?php else: ?>
+                    <h2 class="jp">募集職種</h2>
+                    <p class="en">Open Positions</p>
+                <?php endif; ?>
             </div>
             <dl class="page__rec__positions__list js-anime anime-fadeInUp">
                 <div class="page__rec__positions__item">
@@ -129,7 +133,11 @@
                         </a>
                     </dt>
                     <dd>
-                        顧客のニーズに合わせたメカノケミカル有機合成反応の検討、量産化検討を実施
+                        <?php if (qtranxf_getLanguage() == 'en') : ?>
+                            Optimization and scale-up of mechanochemical organic synthesis reactions to meet client needs.
+                        <?php else: ?>
+                            顧客のニーズに合わせたメカノケミカル有機合成反応の検討、量産化検討を実施
+                        <?php endif; ?>
                     </dd>
                 </div>
                 <div class="page__rec__positions__item">
@@ -174,15 +182,23 @@
     <section class="page__rec__benefits">
         <div class="container">
             <div class="rec__title js-anime anime-fadeInUp">
-                <p class="jp">福利厚生</p>
-                <h2 class="en">Benefits</h2>
+                <?php if (qtranxf_getLanguage() == 'en') : ?>
+                    <h2 class="english">Benefits</h2>
+                <?php else: ?>
+                    <h2 class="jp">福利厚生</h2>
+                    <p class="en">Benefits</p>
+                <?php endif; ?>
             </div>
             <ul class="page__rec__benefits__list js-anime anime-fadeInUp">
                 <li class="page__rec__benefits__item">
                     <div class="icon">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/recruit-icon-benefit01.svg" alt="">
                     </div>
-                    <p class="desc">完全週休二日（土日）祝日、企業が定める休日あり</p>
+                    <?php if (qtranxf_getLanguage() == 'en') : ?>
+                        <p class="desc">Two full days off (Saturdays and Sundays), public holidays and company holidays.</p>
+                    <?php else: ?>
+                        <p class="desc">完全週休二日（土日）祝日、企業が定める休日あり</p>
+                    <?php endif; ?>
                 </li>
                 <li class="page__rec__benefits__item">
                     <div class="icon">
@@ -200,7 +216,11 @@
                     <div class="icon">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/recruit-icon-benefit04.svg" alt="">
                     </div>
-                    <p class="desc">社内レクリエーション費用支給（２万円／年）</p>
+                    <?php if (qtranxf_getLanguage() == 'en') : ?>
+                        <p class="desc">In-house recreation expenses paid (JPY 20000 per year )</p>
+                    <?php else: ?>
+                        <p class="desc">社内レクリエーション費用支給（２万円／年）</p>
+                    <?php endif; ?>
                 </li>
             </ul>
         </div>
@@ -209,24 +229,43 @@
     <section class="page__rec__process">
         <div class="container">
             <div class="rec__title js-anime anime-fadeInUp">
-                <p class="jp">採用までの流れ</p>
-                <h2 class="en">Recruiting Process</h2>
+                <?php if (qtranxf_getLanguage() == 'en') : ?>
+                    <h2 class="english">Recruiting Process</h2>
+                <?php else: ?>
+                    <h2 class="jp">採用までの流れ</h2>
+                    <p class="en">Recruiting Process</p>
+                <?php endif; ?>
             </div>
             <ol class="page__rec__process__list js-anime anime-fadeInUp">
                 <li class="page__rec__process__item">
                     <span class="index font-en t-main">Step 01</span>
-                    <h3 class="heading">書類選考</h3>
-                    <p class="desc">履歴書の審査</p>
+                    <?php if (qtranxf_getLanguage() == 'en') : ?>
+                        <h3 class="heading">Document screening</h3>
+                        <p class="desc">Screening of CVs</p>
+                    <?php else: ?>
+                        <h3 class="heading">書類選考</h3>
+                        <p class="desc">履歴書の審査</p>
+                    <?php endif; ?>
                 </li>
                 <li class="page__rec__process__item">
                     <span class="index font-en t-main">Step 02</span>
-                    <h3 class="heading">専門職面接<span>（技術職の場合）</span></h3>
-                    <p class="desc">技術のバックグラウンド、経験等を審査（Web可能）</p>
+                    <?php if (qtranxf_getLanguage() == 'en') : ?>
+                        <h3 class="heading">Professional Interviews <span>(Technical staff)</span></h3>
+                        <p class="desc">Screening of technical background, experience, etc. (Online interviews are possible.)</p>
+                    <?php else: ?>
+                        <h3 class="heading">専門職面接<span>（技術職の場合）</span></h3>
+                        <p class="desc">技術のバックグラウンド、経験等を審査（Web可能）</p>
+                    <?php endif; ?>
                 </li>
                 <li class="page__rec__process__item">
                     <span class="index font-en t-main">Step 03</span>
-                    <h3 class="heading">最終面接</h3>
-                    <p class="desc">会社の目指すところを共有、適正とCulture Fitを確認</p>
+                    <?php if (qtranxf_getLanguage() == 'en') : ?>
+                        <h3 class="heading">Officer Interviews</h3>
+                        <p class="desc">Share the company's aims and expectations of the job and confirm suitability and Culture Fit.</p>
+                    <?php else: ?>
+                        <h3 class="heading">最終面接</h3>
+                        <p class="desc">会社の目指すところを共有、適正とCulture Fitを確認</p>
+                    <?php endif; ?>
                 </li>
             </ol>
         </div>
