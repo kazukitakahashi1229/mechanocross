@@ -276,8 +276,12 @@
             <div class="cta__recruit">
                 <a href="<?php echo esc_url( home_url('/') ); ?>contact/" class="recruit flex">
                     <div class="cta__recruit__title">
-                        <h2 class="t-white">お問い合わせ</h2>
-                        <p class="font-en t-white">Contact</p>
+                        <?php if (qtranxf_getLanguage() == 'en') : ?>
+                            <h2 class="font-en t-white english">Contact</h2>
+                        <?php else: ?>
+                            <h2 class="t-white">お問い合わせ</h2>
+                            <p class="font-en t-white">Contact</p>
+                        <?php endif; ?>
                     </div>
                     <div class="cta__recruit__text">
                         <p class="t-white">採用に関するご相談やご質問等ございましたら<br>お気軽にご連絡ください。</p>

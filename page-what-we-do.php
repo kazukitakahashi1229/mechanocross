@@ -10,8 +10,12 @@
 <div class="page__header">
     <div class="container">
         <div class="page__header__cont grid">
-            <h1>私たちができること</h1>
-            <p class="font-en">What We Do</p>
+            <?php if (qtranxf_getLanguage() == 'en') : ?>
+                <h1 class="font-en english">What We Do</h1>
+            <?php else: ?>
+                <h1>私たちができること</h1>
+                <p class="font-en">What We Do</p>
+            <?php endif; ?>
         </div>
     </div>
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/png/wave-white-pc.png" alt="wave">
@@ -25,8 +29,12 @@
             <div class="page__do__intro__image left" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/jpg/do-intro-1.jpg);"></div>
             <div class="section__title center grid js-anime anime-fadeInUp">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/logo-opacity.svg" alt="ロゴ">
-                <h2>メカノクロスの有機合成</h2>
-                <p class="font-en t-main">About Mechano Chemistry</p>
+                <?php if (qtranxf_getLanguage() == 'en') : ?>
+                    <h2 class="font-en t-main english">About Mechano Chemistry</h2>
+                <?php else: ?>
+                    <h2>メカノクロスの有機合成</h2>
+                    <p class="font-en t-main">About Mechano Chemistry</p>
+                <?php endif; ?>
             </div>
             <div class="page__do__intro__cont flex js-anime anime-fadeInUp">
                 <div class="page__do__intro__cont__text flex">
@@ -186,8 +194,12 @@
     <section class="page__do__archive">
         <div class="container flex">
             <div class="page__do__archive__title">
-                <h2>実績、論文、受賞歴</h2>
-                <p class="t-main font-en">Achievements and Awards</p>
+                <?php if (qtranxf_getLanguage() == 'en') : ?>
+                    <h2 class="t-main font-en english">Achievements and Awards</h2>
+                <?php else: ?>
+                    <h2>実績、論文、受賞歴</h2>
+                    <p class="t-main font-en">Achievements and Awards</p>
+                <?php endif; ?>
             </div>
             <div class="page__do__archive__cont flex">
                 <div class="page__do__archive__cont__item flex">
