@@ -10,8 +10,12 @@
 <div class="page__header">
     <div class="container">
         <div class="page__header__cont grid">
-            <h1>サステイナビリティ</h1>
-            <p class="font-en">Sustainability</p>
+            <?php if (qtranxf_getLanguage() == 'en') : ?>
+                <h1 class="font-en english">Sustainability</h1>
+            <?php else: ?>
+                <h1>サステイナビリティ</h1>
+                <p class="font-en">Sustainability</p>
+            <?php endif; ?>
         </div>
     </div>
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/png/wave-main-pc.png" alt="wave">

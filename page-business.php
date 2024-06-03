@@ -10,8 +10,12 @@
 <div class="page__header">
     <div class="container">
         <div class="page__header__cont grid">
-            <h1>ビジネスモデル</h1>
-            <p class="font-en">Business Model</p>
+            <?php if (qtranxf_getLanguage() == 'en') : ?>
+                <h1 class="font-en english">Business Model</h1>
+            <?php else: ?>
+                <h1>ビジネスモデル</h1>
+                <p class="font-en">Business Model</p>
+            <?php endif; ?>
         </div>
     </div>
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/png/wave-main-pc.png" alt="wave">

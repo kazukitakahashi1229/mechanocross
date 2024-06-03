@@ -60,8 +60,12 @@
             <div class="page__top__about__cont__left">
                 <div class="section__title left grid js-anime anime-fadeInUp">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/logo-opacity.svg" alt="ロゴ">
-                    <h2 class="">私たちについて</h2>
-                    <p class="font-en t-main">About Us</p>
+                    <?php if (qtranxf_getLanguage() == 'en') : ?>
+                        <h2 class="font-en t-main english">About Us</h2>
+                    <?php else: ?>
+                        <h2 class="">私たちについて</h2>
+                        <p class="font-en t-main">About Us</p>
+                    <?php endif; ?>
                 </div>
                 <div class="page__top__about__cont__left__text js-anime anime-fadeInUp">
                     <?php if (qtranxf_getLanguage() == 'en') : ?>
@@ -94,8 +98,12 @@
         <div class="page__top__business__top flex">
             <div class="section__title left grid js-anime anime-fadeInUp">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/logo-opacity.svg" alt="ロゴ">
-                <h2 class="">事業紹介</h2>
-                <p class="font-en t-main">Our Business</p>
+                <?php if (qtranxf_getLanguage() == 'en') : ?>
+                    <h2 class="font-en t-main english">Our Business</h2>
+                <?php else: ?>
+                    <h2 class="">事業紹介</h2>
+                    <p class="font-en t-main">Our Business</p>
+                <?php endif; ?>
             </div>
             <div class="page__top__business__top__nav">
                 <!-- 前後の矢印 -->
@@ -112,8 +120,12 @@
                 <div class="page__top__business__cont__inner__item swiper-slide">
                     <a href="<?php echo esc_url( home_url('/') ); ?>research/" class="flex" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/jpg/top-business-01.jpg);">
                         <div class="page__top__business__cont__inner__item__title grid">
-                            <h3 class="t-white">メカノケミカル実装研究会</h3>
-                            <p class="font-en t-white">Research</p>
+                            <?php if (qtranxf_getLanguage() == 'en') : ?>
+                                <h3 class="font-en t-white english">Research</h3>
+                            <?php else: ?>
+                                <h3 class="t-white">メカノケミカル実装研究会</h3>
+                                <p class="font-en t-white">Research</p>
+                            <?php endif; ?>
                         </div>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/button-arrow-white.svg" alt="右矢印ボタン">
                     </a>
@@ -121,8 +133,12 @@
                 <div class="page__top__business__cont__inner__item swiper-slide">
                     <a href="<?php echo esc_url( home_url('/') ); ?>what-we-do/" class="flex" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/jpg/top-business-02.jpg);">
                         <div class="page__top__business__cont__inner__item__title grid">
-                            <h3 class="t-white">製品・できること</h3>
-                            <p class="font-en t-white">What We Do</p>
+                            <?php if (qtranxf_getLanguage() == 'en') : ?>
+                                <h3 class="font-en t-white english">What We Do</h3>
+                            <?php else: ?>
+                                <h3 class="t-white">製品・できること</h3>
+                                <p class="font-en t-white">What We Do</p>
+                            <?php endif; ?>
                         </div>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/button-arrow-white.svg" alt="右矢印ボタン">
                     </a>
@@ -130,8 +146,12 @@
                 <div class="page__top__business__cont__inner__item swiper-slide">
                     <a href="<?php echo esc_url( home_url('/') ); ?>business-model/" class="flex" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/jpg/top-business-03.jpg);">
                         <div class="page__top__business__cont__inner__item__title grid">
-                            <h3 class="t-white">ビジネスモデル</h3>
-                            <p class="font-en t-white">Business Model</p>
+                            <?php if (qtranxf_getLanguage() == 'en') : ?>
+                                <h3 class="font-en t-white english">Business Model</h3>
+                            <?php else: ?>
+                                <h3 class="t-white">ビジネスモデル</h3>
+                                <p class="font-en t-white">Business Model</p>
+                            <?php endif; ?>
                         </div>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/button-arrow-white.svg" alt="右矢印ボタン">
                     </a>
@@ -139,8 +159,12 @@
                 <div class="page__top__business__cont__inner__item swiper-slide">
                     <a href="<?php echo esc_url( home_url('/') ); ?>sustainability/" class="flex" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/jpg/top-business-04.jpg);">
                         <div class="page__top__business__cont__inner__item__title grid">
-                            <h3 class="t-white">サステイナビリティ</h3>
-                            <p class="font-en t-white">Sustainability</p>
+                            <?php if (qtranxf_getLanguage() == 'en') : ?>
+                                <h3 class="font-en t-white english">Sustainability</h3>
+                            <?php else: ?>
+                                <h3 class="t-white">サステイナビリティ</h3>
+                                <p class="font-en t-white">Sustainability</p>
+                            <?php endif; ?>
                         </div>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/button-arrow-white.svg" alt="右矢印ボタン">
                     </a>
@@ -156,8 +180,12 @@
     <div class="container">
         <div class="section__title left grid js-anime anime-fadeInUp">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/logo-opacity-white.svg" alt="ロゴ">
-            <h2 class="t-white">共同研究の誘い</h2>
-            <p class="font-en t-white">Joint Project</p>
+            <?php if (qtranxf_getLanguage() == 'en') : ?>
+                <h2 class="font-en t-white english">Joint Project</h2>
+            <?php else: ?>
+                <h2 class="t-white">共同研究の誘い</h2>
+                <p class="font-en t-white">Joint Project</p>
+            <?php endif; ?>
         </div>
         <div class="page__top__joint__cont grid">
             <?php if (qtranxf_getLanguage() == 'en') : ?>
@@ -186,8 +214,12 @@
         <div class="page__top__news__cont flex">
             <div class="page__top__news__cont__item js-anime anime-fadeInUp">
                 <div class="page__top__news__cont__item__title">
-                    <h3>ニュース</h3>
-                    <p class="font-en t-main">News</p>
+                    <?php if (qtranxf_getLanguage() == 'en') : ?>
+                        <h3 class="font-en t-main english">News</h3>
+                    <?php else: ?>
+                        <h3>ニュース</h3>
+                        <p class="font-en t-main">News</p>
+                    <?php endif; ?>
                 </div>
                 <div class="archive__list flex">
                     <ul class="flex">
@@ -229,8 +261,12 @@
             </div>
             <div class="page__top__news__cont__item js-anime anime-fadeInUp">
                 <div class="page__top__news__cont__item__title">
-                    <h3>プレスリリース</h3>
-                    <p class="font-en t-main">Press Release</p>
+                    <?php if (qtranxf_getLanguage() == 'en') : ?>
+                        <h3 class="font-en t-main english">Press Release</h3>
+                    <?php else: ?>
+                        <h3>プレスリリース</h3>
+                        <p class="font-en t-main">Press Release</p>
+                    <?php endif; ?>
                 </div>
                 <div class="archive__list flex">
                     <ul class="flex">
@@ -285,8 +321,12 @@
     <div class="container">
         <div class="section__title center grid js-anime anime-fadeInUp">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/logo-opacity.svg" alt="ロゴ">
-            <h2>メンバー紹介</h2>
-            <p class="font-en t-main">Members</p>
+            <?php if (qtranxf_getLanguage() == 'en') : ?>
+                <h2 class="font-en t-main english">Members</h2>
+            <?php else: ?>
+                <h2>メンバー紹介</h2>
+                <p class="font-en t-main">Members</p>
+            <?php endif; ?>
         </div>
         <div class="page__top__members__cont grid">
             <div class="page__top__members__cont__item flex js-anime anime-fadeInUp">

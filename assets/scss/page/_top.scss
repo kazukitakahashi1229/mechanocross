@@ -369,7 +369,8 @@
                                 font-size: 1.3rem;
                             }
                         }
-                        p {
+                        p,
+                        h3.english {
                             font-size: 4.2rem;
                             @include mq('sp') {
                                 font-size: 2.8rem;
@@ -475,7 +476,8 @@
                     h3 {
 
                     }
-                    p {
+                    p,
+                    h3.english {
                         font-size: 4.2rem;
                         @include mq('sp') {
                             font-size: 3.2rem;

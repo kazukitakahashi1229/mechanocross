@@ -10,8 +10,12 @@
 <div class="page__header">
     <div class="container">
         <div class="page__header__cont grid">
-            <h1>私たちについて</h1>
-            <p class="font-en">About Us</p>
+            <?php if (qtranxf_getLanguage() == 'en') : ?>
+                <h1 class="font-en english">About Us</h1>
+            <?php else: ?>
+                <h1>私たちについて</h1>
+                <p class="font-en">About Us</p>
+            <?php endif; ?>
         </div>
     </div>
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/png/wave-white-pc.png" alt="wave">
@@ -24,8 +28,12 @@
         <div class="container">
             <div class="section__title center grid js-anime anime-fadeInUp">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/logo-opacity.svg" alt="ロゴ">
-                <h2>企業理念</h2>
-                <p class="font-en t-main">Our Philosophy</p>
+                <?php if (qtranxf_getLanguage() == 'en') : ?>
+                    <h2 class="font-en t-main english">Our Philosophy</h2>
+                <?php else: ?>
+                    <h2>企業理念</h2>
+                    <p class="font-en t-main">Our Philosophy</p>
+                <?php endif; ?>
             </div>
             <div class="page__about__philo__cont">
                 <div class="page__about__philo__cont__top js-anime anime-fadeInUp">
@@ -119,8 +127,12 @@
                 <div class="page__about__company__cont__left grid js-anime anime-fadeInUp">
                     <div class="section__title left grid">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/logo-opacity.svg" alt="ロゴ">
-                        <h2>会社概要</h2>
-                        <p class="font-en t-main">Company</p>
+                        <?php if (qtranxf_getLanguage() == 'en') : ?>
+                            <h2 class="font-en t-main english">Company</h2>
+                        <?php else: ?>
+                            <h2>会社概要</h2>
+                            <p class="font-en t-main">Company</p>
+                        <?php endif; ?>
                     </div>
                     <?php if (qtranxf_getLanguage() == 'en') : ?>
                         <div class="page__about__company__cont__left__item flex">
@@ -308,8 +320,12 @@ Kita 21 Nishi 10, Kita-Ku, Sapporo, Hokkaido, Japan</p>
         <div class="container">
             <div class="section__title left grid js-anime anime-fadeInUp">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/logo-opacity.svg" alt="ロゴ">
-                <h2>メカノクロス社の歴史</h2>
-                <p class="font-en t-main">Our History</p>
+                <?php if (qtranxf_getLanguage() == 'en') : ?>
+                    <h2 class="font-en t-main english">Our History</h2>
+                <?php else: ?>
+                    <h2>メカノクロス社の歴史</h2>
+                    <p class="font-en t-main">Our History</p>
+                <?php endif; ?>
             </div>
             <?php if (qtranxf_getLanguage() == 'en') : ?>
                 <div class="page__about__history__cont js-anime anime-fadeInUp">
