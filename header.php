@@ -48,30 +48,30 @@
                     </li>
                     <li class="drop-menu">
                         <a href="<?php echo esc_url( home_url('/') ); ?>about-us/" class="flex hide_tab">
-                            <span>私たちについて</span>
+                            <span><?php if (qtranxf_getLanguage() == 'en') { echo 'About Us'; } else { echo '私たちについて'; } ?></span>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/bottom-arrow-main.svg" alt="下矢印のアイコン">
                         </a>
                         <span class="flex show_tab">
-                            <a href="<?php echo esc_url( home_url('/') ); ?>about-us/">私たちについて</a>
+                            <a href="<?php echo esc_url( home_url('/') ); ?>about-us/"><?php if (qtranxf_getLanguage() == 'en') { echo 'About Us'; } else { echo '私たちについて'; } ?></a>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/bottom-arrow-main.svg" alt="下矢印のアイコン">
                         </span>
                         <div class="drop-menu-item">
                             <ul class="grid">
                                 <li>
                                     <a href="<?php echo esc_url( home_url('/') ); ?>about-us/#philosophy">
-                                        <span>企業理念</span>
+                                        <span><?php if (qtranxf_getLanguage() == 'en') { echo 'Our Philosophy'; } else { echo '企業理念'; } ?></span>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/right-arrow-main.svg" alt="右矢印のアイコン">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="<?php echo esc_url( home_url('/') ); ?>about-us/#company">
-                                        <span>会社概要</span>
+                                        <span><?php if (qtranxf_getLanguage() == 'en') { echo 'Our Profile'; } else { echo '会社概要'; } ?></span>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/right-arrow-main.svg" alt="右矢印のアイコン">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="<?php echo esc_url( home_url('/') ); ?>about-us/#history">
-                                        <span>会社沿革</span>
+                                        <span><?php if (qtranxf_getLanguage() == 'en') { echo ' Our History'; } else { echo '会社沿革'; } ?></span>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/right-arrow-main.svg" alt="右矢印のアイコン">
                                     </a>
                                 </li>
@@ -80,26 +80,26 @@
                     </li>
                     <li class="drop-menu">
                         <span class="flex">
-                            <span>事業紹介</span>
+                            <span><?php if (qtranxf_getLanguage() == 'en') { echo 'Services'; } else { echo '事業紹介'; } ?></span>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/bottom-arrow-main.svg" alt="下矢印のアイコン">
                         </span>
                         <div class="drop-menu-item">
                             <ul class="grid">
                                 <li>
                                     <a href="<?php echo esc_url( home_url('/') ); ?>what-we-do/">
-                                        <span>製品・できること</span>
+                                        <span><?php if (qtranxf_getLanguage() == 'en') { echo 'Products & What We Do'; } else { echo '製品・できること'; } ?></span>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/right-arrow-main.svg" alt="右矢印のアイコン">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="<?php echo esc_url( home_url('/') ); ?>business-model/">
-                                        <span>ビジネスモデル</span>
+                                        <span><?php if (qtranxf_getLanguage() == 'en') { echo 'Business Model'; } else { echo 'ビジネスモデル'; } ?></span>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/right-arrow-main.svg" alt="右矢印のアイコン">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="<?php echo esc_url( home_url('/') ); ?>research/">
-                                        <span>メカノケミカル<br class="hide_tab">有機合成実装研究会</span>
+                                        <span><?php if (qtranxf_getLanguage() == 'en') { echo 'The Mechano Chemistry Research Group'; } else { echo 'メカノケミカル<br class="hide_tab">有機合成実装研究会'; } ?></span>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/right-arrow-main.svg" alt="右矢印のアイコン">
                                     </a>
                                 </li>
@@ -108,24 +108,24 @@
                     </li>
                     <li class="drop-menu">
                         <a href="<?php echo esc_url( home_url('/') ); ?>news/" class="flex hide_tab">
-                            <span>お知らせ</span>
+                            <span><?php if (qtranxf_getLanguage() == 'en') { echo 'Informations'; } else { echo 'お知らせ'; } ?></span>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/bottom-arrow-main.svg" alt="下矢印のアイコン">
                         </a>
                         <span class="flex show_tab">
-                            <a href="<?php echo esc_url( home_url('/') ); ?>news/">お知らせ</a>
+                            <a href="<?php echo esc_url( home_url('/') ); ?>news/"><?php if (qtranxf_getLanguage() == 'en') { echo 'Informations'; } else { echo 'お知らせ'; } ?></a>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/bottom-arrow-main.svg" alt="下矢印のアイコン">
                         </span>
                         <div class="drop-menu-item">
                             <ul class="grid">
                                 <li>
                                     <a href="<?php echo esc_url( home_url('/') ); ?>news/category/notice/">
-                                        <span>ニュース</span>
+                                        <span><?php if (qtranxf_getLanguage() == 'en') { echo 'News'; } else { echo 'ニュース'; } ?></span>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/right-arrow-main.svg" alt="右矢印のアイコン">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="<?php echo esc_url( home_url('/') ); ?>news/category/press_release/">
-                                        <span>プレスリリース</span>
+                                        <span><?php if (qtranxf_getLanguage() == 'en') { echo 'Press Release'; } else { echo 'プレスリリース'; } ?></span>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/right-arrow-main.svg" alt="右矢印のアイコン">
                                     </a>
                                 </li>
@@ -134,17 +134,17 @@
                     </li>
                     <li>
                         <a href="<?php echo esc_url( home_url('/') ); ?>sustainability/">
-                            <span>サステイナビリティ</span>
+                            <span><?php if (qtranxf_getLanguage() == 'en') { echo 'Sustainability'; } else { echo 'サステイナビリティ'; } ?></span>
                         </a>
                     </li>
                     <li>
                         <a href="<?php echo esc_url( home_url('/') ); ?>recruit/">
-                            <span>採用情報</span>
+                            <span><?php if (qtranxf_getLanguage() == 'en') { echo 'Recruitment'; } else { echo '採用情報'; } ?></span>
                         </a>
                     </li>
                     <li class="flex">
                         <a href="<?php echo esc_url( home_url('/') ); ?>contact/" class="flex">
-                            <span>お問い合わせ</span>
+                            <span><?php if (qtranxf_getLanguage() == 'en') { echo 'Contact'; } else { echo 'お問い合わせ'; } ?></span>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/right-arrow-white.svg" alt="右矢印">
                         </a>
                     </li>
