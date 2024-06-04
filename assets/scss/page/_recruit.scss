@@ -103,14 +103,14 @@
         @include mq('sp') {
             font-size: 1.8rem;
             letter-spacing: 0;
-            white-space: nowrap;
+            // white-space: nowrap;
         }
     }
-    span:last-child {
-        @include mq('sp') {
-            margin-top: 1.3rem;
-        }
-    }
+    // span:last-child {
+    //     @include mq('sp') {
+    //         margin-top: 1.3rem;
+    //     }
+    // }
 }
 
 .page__rec__fv__button {
