@@ -81,14 +81,22 @@
         <div class="container grid">
             <div class="section__title__sub grid main js-anime anime-fadeInUp">
                 <div class="section__title__sub__inner">
-                    <h2 class="">ビジネスモデル</h2>
+                    <?php if (qtranxf_getLanguage() == 'en') : ?>
+                        <h2>Business Model</h2>
+                    <?php else: ?>
+                        <h2 class="">ビジネスモデル</h2>
+                    <?php endif; ?>
                 </div>
             </div>
             <div class="page__business__model__cont flex js-anime anime-fadeInUp">
                 <div>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/png/business-model.png" alt="ビジネスモデル">
                 </div>
-                <h3>テスト評価プロセス(商標予定：MechanoX™︎)</h3>
+                <?php if (qtranxf_getLanguage() == 'en') : ?>
+                    <h3>Process of Test Evaluation(Trademark to be acquired：Tentative MechanoX™︎)</h3>
+                <?php else: ?>
+                    <h3>テスト評価プロセス(商標予定：MechanoX™︎)</h3>
+                <?php endif; ?>
                 <div>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/png/business-process-2.png" alt="テスト評価プロセス">
                 </div>

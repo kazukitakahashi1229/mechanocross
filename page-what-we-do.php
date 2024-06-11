@@ -308,7 +308,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/jpg/do-tech-card-1.jpg" alt="MM400ボールミル">
                     <div>
                         <?php if (qtranxf_getLanguage() == 'en') : ?>
-                            <h4 class="t-main">MM400ボールミル</h4>
+                            <h4 class="t-main">MM400 Mixer mill </h4>
                             <p>A general mixer-mill device with high grinding power. Reaction vessels (called jars) are 1.5~50 mL in size and used for lab-scale studies. Jar materials include hardened steel, stainless steel, tungsten carbide, agate, zirconium oxide, PTFE, PMMA, etc., and can be adjusted to suit reaction conditions.</p>
                         <?php else: ?>
                             <h4 class="t-main">MM400ボールミル</h4>
@@ -320,7 +320,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/jpg/do-tech-card-2.jpg" alt="PM100 遊星ボールミル">
                     <div class>
                         <?php if (qtranxf_getLanguage() == 'en') : ?>
-                            <h4 class="t-main">PM100 遊星ボールミル</h4>
+                            <h4 class="t-main">PM100 Planetary ball mill</h4>
                             <p>This mill device utilizes centrifugal force at high speed rotation and also has high milling power. Reaction vessels (called jars) range in size from 12 to 500 mL and are used for larger scale reactions than mixer type. Jars are made of hardened steel, stainless steel, tungsten carbide, agate, sintered aluminum oxide, silicon nitride, and zirconium oxide.</p>
                         <?php else: ?>
                             <h4 class="t-main">PM100 遊星ボールミル</h4>
@@ -332,7 +332,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/jpg/do-tech-card-3.jpg" alt="TM300ドラムミル">
                     <div>
                         <?php if (qtranxf_getLanguage() == 'en') : ?>
-                            <h4 class="t-main">TM300ドラムミル</h4>
+                            <h4 class="t-main">TM300 Drum mill</h4>
                             <p>This is a large scale mill system capable of ball and rod milling. It has the grinding power of a mixer mill or other mills, but with jar sizes from 5~43.4 L, and can also react on larger scales. Jars are generally made of stainless steel.</p>
                         <?php else: ?>
                             <h4 class="t-main">TM300ドラムミル</h4>
@@ -349,7 +349,11 @@
         <div class="container grid">
             <div class="section__title__sub grid main">
                 <div class="section__title__sub__inner js-anime anime-fadeInUp">
-                    <h2 class="">ポテンシャル</h2>
+                    <?php if (qtranxf_getLanguage() == 'en') : ?>
+                        <h2>Potential</h2>
+                    <?php else: ?>
+                        <h2 class="">ポテンシャル</h2>
+                    <?php endif; ?>
                 </div>
             </div>
             <div class="page__do__model__cont flex js-anime anime-fadeInUp">
@@ -384,10 +388,18 @@
         <div class="container grid">
             <div class="section__title__sub grid main">
                 <div class="section__title__sub__inner js-anime anime-fadeInUp">
-                    <h2 class="">可能反応まとめ</h2>
+                    <?php if (qtranxf_getLanguage() == 'en') : ?>
+                        <h2>Summary of possible reactions</h2>
+                    <?php else: ?>
+                        <h2 class="">可能反応まとめ</h2>
+                    <?php endif; ?>
                 </div>
                 <div class="section__title__sub__lead js-anime anime-fadeInUp">
-                    <p class="">私達が注目するメカノケミカル有機合成では、通常の溶液条件では24時間で60％の進行に対し、新手法では5分でほぼ100%を実現しました。反応における1回当たりの廃棄物量は既存方の約15分の1、CO2排出量は約25分の1と大幅なコストダウンが可能になります。（Suzuki-Miyaura クロスカップリングで比較）</p>
+                    <?php if (qtranxf_getLanguage() == 'en') : ?>
+                        <p>In the mechanochemical organic synthesis process, the new method achieves almost 100% in 5 min, compared to only 60% in 24 h under conventional solution-based conditions. The amount of waste per reaction is about 1/15 of the conventional method, and CO2 emissions are about 1/25 of the conventional method, enabling a significant cost reduction. (Comparison with Suzuki-Miyaura cross coupling)</p>
+                    <?php else: ?>
+                        <p class="">私達が注目するメカノケミカル有機合成では、通常の溶液条件では24時間で60％の進行に対し、新手法では5分でほぼ100%を実現しました。反応における1回当たりの廃棄物量は既存方の約15分の1、CO2排出量は約25分の1と大幅なコストダウンが可能になります。（Suzuki-Miyaura クロスカップリングで比較）</p>
+                    <?php endif; ?>
                 </div>
             </div>
             <div class="page__do__model__cont js-anime anime-fadeInUp">

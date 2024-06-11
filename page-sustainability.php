@@ -28,7 +28,11 @@
         <div class="container grid">
             <div class="section__title__sub grid white js-anime anime-fadeInUp">
                 <div class="section__title__sub__inner">
-                    <h2 class="t-white">サステイナブルへの取り組み</h2>
+                    <?php if (qtranxf_getLanguage() == 'en') : ?>
+                        <h2 class="t-white">Sustainable Initiatives</h2>
+                    <?php else: ?>
+                        <h2 class="t-white">サステイナブルへの取り組み</h2>
+                    <?php endif; ?>
                 </div>
                 <div class="section__title__sub__lead">
                     <?php if (qtranxf_getLanguage() == 'en') : ?>

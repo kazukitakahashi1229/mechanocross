@@ -180,7 +180,7 @@
                         </div>
                         <div class="page__about__company__cont__left__item flex">
                             <div class="page__about__company__cont__left__item__left">
-                                <p>事業内容</p>
+                                <p>Business details</p>
                             </div>
                             <div class="page__about__company__cont__left__item__right">
                                 <ul class="grid">
