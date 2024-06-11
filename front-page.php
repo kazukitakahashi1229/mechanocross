@@ -425,7 +425,12 @@
                         <p class="font-en t-main">Corporate Adviser</p>
                     </div>
                     <div class="page__top__members__cont__item__right__text">
-                        <p>国内化学メーカーにて各種製品の営業・事業運営、新規事業開発に携わる。主に欧州・中東地域での建材事業展開の経験が長く、現在国内製造会社を中心とした事業コンサルタント業務を行う。2024年6月からメカノクロス に参画。</p>
+                        <?php if (qtranxf_getLanguage() == 'en') : ?>
+                            <p>Worked in sales and business operations for various products and new business development at a domestic chemical manufacturer. <br>Extensive experience in building materials business development mainly in Europe and the Middle East, and currently works as a business consultant mainly for domestic manufacturing companies. <br>Joined Mechanocross in June 2024.
+</p>
+                        <?php else: ?>
+                            <p>国内化学メーカーにて各種製品の営業・事業運営、新規事業開発に携わる。主に欧州・中東地域での建材事業展開の経験が長く、現在国内製造会社を中心とした事業コンサルタント業務を行う。2024年6月からメカノクロス に参画。</p>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
@@ -441,7 +446,11 @@
                         <p class="font-en t-main">Legal Counsel</p>
                     </div>
                     <div class="page__top__members__cont__item__right__text">
-                        <p>2004年北海道大学大学院工学研究科量子物理工学専攻修了後、(株)日立製作所入社、知的財産権本部配属。2007年弁理士試験合格。2012年北海道大学法科大学院修了。2013年司法試験合格。2013年1月より弁護士法人内田・鮫島法律事務所。2023年11月からメカノクロスが利用した支援制度にて知り合い、2024年4月からメカノクロスに参画。</p>
+                        <?php if (qtranxf_getLanguage() == 'en') : ?>
+                            <p>After graduating from the Graduate School of Engineering, Hokkaido University, majoring in quantum physics engineering in 2004, he joined Hitachi, Ltd. and was assigned to the Intellectual Property Rights Headquarters. He passed the patent attorney exam in 2007. Graduated from the Hokkaido University Law School in 2012. Passed the bar exam in 2013. He joined Uchida & Samejima Law Firm in January 2013. <br>Mr. Takahashi met through a support system used by Mechanocross in November 2023, and joined Mechanocross in April 2024.</p>
+                        <?php else: ?>
+                            <p>2004年北海道大学大学院工学研究科量子物理工学専攻修了後、(株)日立製作所入社、知的財産権本部配属。2007年弁理士試験合格。2012年北海道大学法科大学院修了。2013年司法試験合格。2013年1月より弁護士法人内田・鮫島法律事務所。2023年11月からメカノクロスが利用した支援制度にて知り合い、2024年4月からメカノクロスに参画。</p>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
